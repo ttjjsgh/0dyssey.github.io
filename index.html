@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/07/21/%E9%80%86%E5%90%91/">逆向工程-“X86与X64”</a>
+      <a class="p-name article-title" href="/2021/07/21/%E9%80%86%E5%90%91/">逆向工程--“X86与X64”</a>
     </h1>
   
 
@@ -93,12 +93,13 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>1.1寄存器组与数据类型<br>运行于保护模式下的x86体系有8个32位通用寄存器，EAX,EBX,ECX,EDX,EDI,EBP,ESP，这些寄存器还有部分可再分为8位和16位寄存器。<br>指令指针储存在EIP寄存器中。</p>
+        <p>1.1寄存器组与数据类型<br>运行于保护模式下的x86体系有8个32位通用寄存器，EAX,EBX,ECX,EDX,EDI,ESI,EBP,ESP，这些寄存器还有部分可再分为8位和16位寄存器。<br>指令指针储存在EIP寄存器中。<br>部分GPR及其用途<br>ECX 循环计数<br>ESI 字符串/内存操作的源<br>EDI 宇符串/内存操作中的目标<br>EBP 帧基指针<br>ESP 栈指针<br>常用的数据类型有以下几种。<br>字节(Byte): 8位，比如AL、BL、CL。<br>字(Word): 16位， 比如AX、BX、CX。<br>双字( Double Word): 32位，比如EAX、EBX、ECX。<br>四字( Quad Word ): 64位。虽然x86并不支持64位GPR，但是在某些场景下可以把两个寄存器(通常是EDA:EAX )的内容合并起来当作64位值。比如，RDTSC指令会把一个64位值写人EDX: EAX寄存器。<br>32位寄存器EFLAGS用于存储算数运算状态以及其他运行状态（比如陷阱标志位）。举例来说，如果前一个ADD运算的结果是0，那么ZF标志位就会被设为1。最初EFLAGS中的标志位用于实现条件分支跳转。</p>
+<p>1.2指令集<br>x86数据移动方式：<br>1.立即数到寄存器<br>2.寄存器到寄存器<br>3.立即数到内存<br>4.寄存器到内存，或反方向<br>5.内存到内存（x86独有）<br>而ARM只支持通过加载/存储指令（LDR/STR）从内存读出或向内存写入数据。<br>x86的另一个重要特性是使用了变长指令–指令的长度从1到15字节不等。而在ARM上 ， 指令长度只能是2或4字节。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/21/%E9%80%86%E5%90%91/" data-id="ckrd25p4y0000ykw5eyta24wq" data-title="逆向工程-“X86与X64”" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/07/21/%E9%80%86%E5%90%91/" data-id="ckrd25p4y0000ykw5eyta24wq" data-title="逆向工程--“X86与X64”" class="article-share-link">Share</a>
       
       
       
@@ -192,7 +193,7 @@
       <ul>
         
           <li>
-            <a href="/2021/07/21/%E9%80%86%E5%90%91/">逆向工程-“X86与X64”</a>
+            <a href="/2021/07/21/%E9%80%86%E5%90%91/">逆向工程--“X86与X64”</a>
           </li>
         
           <li>
