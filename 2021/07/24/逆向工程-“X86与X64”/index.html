@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>逆向工程--“X86与X64” | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="1.2.1语法根据汇编器&#x2F;反汇编器的不同，x86汇编代码有两种语法记法： Intel和AT&amp;TINTEL:MOV ECX， AABBCCDDHMOV ECX， [EAX〕MOV ECX，EAXMOVL  $OXAABBCCDD,AT&amp;T:MOVL $OXAABBCCDD, *ECXMOVL { EAX)，%EAX1.2.2数据移动指令用于操作来自寄存器或主内存中的数据。．移动数据最">
+<meta property="og:type" content="article">
+<meta property="og:title" content="逆向工程--“X86与X64”">
+<meta property="og:url" content="http://example.com/2021/07/24/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B-%E2%80%9CX86%E4%B8%8EX64%E2%80%9D/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.2.1语法根据汇编器&#x2F;反汇编器的不同，x86汇编代码有两种语法记法： Intel和AT&amp;TINTEL:MOV ECX， AABBCCDDHMOV ECX， [EAX〕MOV ECX，EAXMOVL  $OXAABBCCDD,AT&amp;T:MOVL $OXAABBCCDD, *ECXMOVL { EAX)，%EAX1.2.2数据移动指令用于操作来自寄存器或主内存中的数据。．移动数据最">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-07-24T03:20:40.000Z">
+<meta property="article:modified_time" content="2021-07-24T03:48:37.138Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -69,9 +73,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-逆向工程-“X86与X64”" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-逆向工程-“X86与X64”" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/07/24/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B-%E2%80%9CX86%E4%B8%8EX64%E2%80%9D/" class="article-date">
   <time class="dt-published" datetime="2021-07-24T03:20:40.000Z" itemprop="datePublished">2021-07-24</time>
@@ -84,8 +86,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/07/24/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B-%E2%80%9CX86%E4%B8%8EX64%E2%80%9D/">逆向工程--“X86与X64”</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      逆向工程--“X86与X64”
     </h1>
   
 
@@ -105,102 +107,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-逆向" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/07/21/%E9%80%86%E5%90%91/" class="article-date">
-  <time class="dt-published" datetime="2021-07-21T05:24:48.000Z" itemprop="datePublished">2021-07-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/07/21/%E9%80%86%E5%90%91/">逆向工程--“X86与X64”</a>
-    </h1>
+    <a href="/2021/07/21/%E9%80%86%E5%90%91/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">逆向工程--“X86与X64”</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1.1寄存器组与数据类型<br>运行于保护模式下的x86体系有8个32位通用寄存器，EAX,EBX,ECX,EDX,EDI,ESI,EBP,ESP，这些寄存器还有部分可再分为8位和16位寄存器。<br>指令指针储存在EIP寄存器中。<br>部分GPR及其用途<br>ECX 循环计数<br>ESI 字符串/内存操作的源<br>EDI 宇符串/内存操作中的目标<br>EBP 帧基指针<br>ESP 栈指针<br>常用的数据类型有以下几种。<br>字节(Byte): 8位，比如AL、BL、CL。<br>字(Word): 16位， 比如AX、BX、CX。<br>双字( Double Word): 32位，比如EAX、EBX、ECX。<br>四字( Quad Word ): 64位。虽然x86并不支持64位GPR，但是在某些场景下可以把两个寄存器(通常是EDA:EAX )的内容合并起来当作64位值。比如，RDTSC指令会把一个64位值写人EDX: EAX寄存器。<br>32位寄存器EFLAGS用于存储算数运算状态以及其他运行状态（比如陷阱标志位）。举例来说，如果前一个ADD运算的结果是0，那么ZF标志位就会被设为1。最初EFLAGS中的标志位用于实现条件分支跳转。</p>
-<p>1.2指令集<br>x86数据移动方式：<br>1.立即数到寄存器<br>2.寄存器到寄存器<br>3.立即数到内存<br>4.寄存器到内存，或反方向<br>5.内存到内存（x86独有）<br>而ARM只支持通过加载/存储指令（LDR/STR）从内存读出或向内存写入数据。<br>x86的另一个重要特性是使用了变长指令–指令的长度从1到15字节不等。而在ARM上 ， 指令长度只能是2或4字节。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/21/%E9%80%86%E5%90%91/" data-id="ckrd25p4y0000ykw5eyta24wq" data-title="逆向工程--“X86与X64”" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/07/17/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-07-17T11:16:32.053Z" itemprop="datePublished">2021-07-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/07/17/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/17/hello-world/" data-id="ckr7oecxz00004kw56klebj4z" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
