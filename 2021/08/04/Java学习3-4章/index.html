@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Java学习3-4章 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="三、选择结构1.if选择结构if基本选择结构语法：if(要满足的条件){如果条件为true的时候，进入大括号中满足条件之后得到的结果，不满足条件不会去执行}如果条件为false的时候，绕过大括号执行外面的       条件只能是boolean类型的数据  12.逻辑运算符：&amp;&amp;(shift+7):and符号，并且的意思，同时满足连接前后条件才为true，有一个不满足为false||">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java学习3-4章">
+<meta property="og:url" content="http://example.com/2021/08/04/Java%E5%AD%A6%E4%B9%A03-4%E7%AB%A0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="三、选择结构1.if选择结构if基本选择结构语法：if(要满足的条件){如果条件为true的时候，进入大括号中满足条件之后得到的结果，不满足条件不会去执行}如果条件为false的时候，绕过大括号执行外面的       条件只能是boolean类型的数据  12.逻辑运算符：&amp;&amp;(shift+7):and符号，并且的意思，同时满足连接前后条件才为true，有一个不满足为false||">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-08-04T14:22:09.000Z">
+<meta property="article:modified_time" content="2021-08-04T14:22:46.588Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Java学习3-4章" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/08/04/Java%E5%AD%A6%E4%B9%A03-4%E7%AB%A0/" class="article-date">
+  <time class="dt-published" datetime="2021-08-04T14:22:09.000Z" itemprop="datePublished">2021-08-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Java学习3-4章
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>三、选择结构<br>1.if选择结构<br>if基本选择结构<br>语法：if(要满足的条件){<br>如果条件为true的时候，进入大括号中<br>满足条件之后得到的结果，不满足条件不会去执行<br>}<br>如果条件为false的时候，绕过大括号执行外面的</p>
+<pre><code>      条件只能是boolean类型的数据
+</code></pre>
+<p>1<br>2.逻辑运算符：<br>&amp;&amp;(shift+7):and符号，并且的意思，同时满足连接前后条件才为true，有一个不满足为<br>false<br>||(shirt+):或者的意思，只要前后两个条件一个为true，整个表达式就为true，同时为<br>false才为false<br>!(shirt+1):非的意思，就是取反，如果表达式为true，使用非就为false</p>
+<p>3.if-else选择结构：<br>适用于基本选择条件的情况<br>语法：if(要满足的条件){<br>满足条件得到的结果<br>}else{<br>不满足条件的得到的结果<br>}</p>
+<p>4.产生一个随机数：<br>1、找到一个有随机数产生器的商店，语法：import java.util.Random;<br>2、购买一台随机数产生器并取一个名字，语法：Random ran = new Random();<br>3、使用这台随机数产生器的功能区产生随机数，语法：ran.nextInt(数字);<br>ran.nextInt(10) 表示产生一个0<del>9之间的随机数<br>ran.nextInt(10) +1表示产生一个1</del>10之间的随机数</p>
+<p>5.多重if选择结构：<br>适用于很多条件分支的情况<br>语法：if(要满足的条件1){<br>满足条件1得到的结果<br>}else if(要满足的条件2){ //默认不满足条件1<br>满足条件2得到的结果<br>}else if(要满足的条件n){ //默认不满足条件2<br>满足条件n得到的结果<br>}else{ //默认不满足条件n<br>不满足所有条件得到的结果<br>}<br>只要找到一个满足的条件，执行完之后，结束选择结构</p>
+<p>6.嵌套if选择结构<br>适用于在一个判断的基础再做一次判断的情况<br>语法：if(要满足的条件1){<br>满足条件1得到的结果<br>if(要满足的条件2){<br>满足条件2得到的结果<br>}<br>}else{<br>不满足条件1得到的结果<br>}</p>
+<p>==只能够比较数值类型，比较字符串是否相等，使用.equals(“要等于哪个字符串”);<br>比如：sex.equals(“男”)；10 == 10</p>
+<p>四、循环结构<br>1.循环结构：<br>打印50份试卷，是从第1份开始打印，打印到第50份结束，重复打印试卷的过程<br>绕操场跑10圈，从第1圈开始，到第10圈结束，重复跑步的过程<br>做100道编程题，从第1题开始，到第100道结束，重复做题的过程<br>2.循环的概念：重复完成某一件事情或者某一个操作，有一个开始位置和结束位置就叫做<br>循环<br>3.循环的特点：<br>1、循环条件：也就是满足某个条件下才做重复的操作<br>2、循环操作：也就是重复所做的事情或者操作</p>
+<p>4.while循环的语法：<br>while(循环条件){<br>满足条件的时候所做的循环操作<br>}<br>特点：先判断，再执行<br>使用while循环的步骤：<br>1、确定是否存在重复操作<br>2、分析出循环条件和循环操作分别是什么<br>3、套用while循环语法写出循环结构<br>4、检查循环是否能正确退出</p>
+<p>5.do-while循环结构的语法：<br>do{<br>循环操作<br>}while(循环条件);<br>特点：先执行循环操作，再进行循环条件判断（先执行，再判断）</p>
+<p>6.while循环和do-while循环的差别：<br>1、循环的次序不同，while循环是先判断，再执行，do-while是先执行，再判断；<br>2、while循环在初始值不满足循环条件的时候一次都不会执行，do-while循环在初始值不<br>满足循环条件的时候至少执行一次</p>
+<p>7.程序调试：<br>断点调试的步骤：（每次调试后取消掉断点）<br>1、设置断点：在左侧边栏的位置点击鼠标左键两次，可以生成一个断点<br>2、进入调试模式：点击右键，选择debug as进入debug调试模式，程序会在设置断点的地<br>方停下来<br>3、单步执行，也就是一行一行的执行代码，按F6单步跳过执行代码<br>4、观察变量值的变化<br>5、找出错误的位置<br>6、改正错误<br>7、运行看结果是否正确**</p>
+<p>8.for循环结构<br>语法：for(表达式1;表达式2;表达式3){<br>循环操作<br>}<br>表达式1：循环从哪里开始，也就是循环的初始值，比如：int num = 1<br>表达式2：循环的条件，也就是循环到哪里结束，比如：num &lt;100<br>表达式3：计数器，也就是每循环一次，初始值产生怎样的变化，比如：num++<br>每个表达式之间用分号隔开，每个表达式都可以不写，但是分号不能省略</p>
+<p>for循环的执行顺序：<br>      ①先去执行表达式1，也就是先去找初始值<br>      ②第二步去执行表达式2，也就是去找循环条件<br>      ③第三步去执行循环操作<br>      ④最后才去执行表达式3，也就是最后才实现初始值变化的过程</p>
+<p>表达式1和表达3中可以写多个，表达式2,条件只能有一个<br>9.跳转语句的使用：<br>break关键字：（通常和if选择结构一起使用）<br>在switch使用break表示结束switch选择结构去执行选择结构外的代码<br>在循环中使用break表示结束循环结构去执行循环结构外的代码</p>
+<p>continue关键字：（通常和if选择结构一起使用）<br>continue只能够在循环结构中使用<br>在循环中使用continue表示结束当前这一次循环，然后开始下一次循环</p>
+<p>使用场合：</p>
+<p>break常用于switch结构和循环结构中</p>
+<p>continue一般用于循环结构中</p>
+<p>作用（循环结构中）<br>1<br>break语句终止某个循环，程序跳转到循环块外的下一条语句</p>
+<pre><code>continue跳出本次循环，进入下一次循环 
+</code></pre>
+<p>1<br>10.循环结构四要素：<br>1、初始值，也就是循环要从哪里开始<br>2、循环条件，循环要到哪里结束<br>3、循环操作（循环体），就是需要重复做的某些操作<br>4、计数器（迭代部分），就是每次重复之后，初始值要产生的变化</p>
+<p>11.while、do-while和for循环的区别：<br>1、执行顺序不同<br>while和for循环：先判断，再执行<br>do-while循环：先执行，再判断</p>
+<p>2、适用场景（循环次数固定推荐使用for循环）<br>   for循环只适用于循环次数固定的情况<br>   while和do-while循环无论循环次数是否固定都可以使用</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/08/04/Java%E5%AD%A6%E4%B9%A03-4%E7%AB%A0/" data-id="ckrxq4har0000s4w56o2x9ptw" data-title="Java学习3-4章" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/08/01/Java%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Java学习1-2章</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/08/04/Java%E5%AD%A6%E4%B9%A03-4%E7%AB%A0/">Java学习3-4章</a>
+          </li>
+        
+          <li>
+            <a href="/2021/08/01/Java%E5%AD%A6%E4%B9%A0/">Java学习1-2章</a>
+          </li>
+        
+          <li>
+            <a href="/2021/08/01/Java%E5%AD%A6%E4%B9%A01-2%E7%AB%A0/">Java学习</a>
+          </li>
+        
+          <li>
+            <a href="/2021/07/29/%E6%95%B0%E6%8D%AE%E5%AE%BD%E5%BA%A6/">数据宽度</a>
+          </li>
+        
+          <li>
+            <a href="/2021/07/24/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B-%E2%80%9CX86%E4%B8%8EX64%E2%80%9D/">逆向工程--“X86与X64”</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
