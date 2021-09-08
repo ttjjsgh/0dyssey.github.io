@@ -71,6 +71,53 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Java变量" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/08/Java%E5%8F%98%E9%87%8F/" class="article-date">
+  <time class="dt-published" datetime="2021-09-08T08:15:59.000Z" itemprop="datePublished">2021-09-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/08/Java%E5%8F%98%E9%87%8F/">Java变量</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>变量概念：<br>1.变量是程序中储存数据的基本单元，在该存储空间中，存储的数值可以改变。<br>2.通过变量名可以简单快速地找到它存储的数据。</p>
+<p>变量使用步骤：<br>1.声明变量，即根据数据类型在内存申请空间。<br>                 数据类型    变量名—&gt;int age；</p>
+<p>2.赋值，即将数据存储值对应的内存空间。<br>                 变量名=数据—&gt;age=20；</p>
+<p>注：第一步和第二步可以合并。<br>       数据类型  变量名=数值—&gt;int age=20;</p>
+<p>3.使用变量，即取出数据使用。</p>
+<p>Java中有3种类型的变量：<br>1.全局变量：类的属性，也叫成员变量或实例变量。<br>2.局部变量：某个或代码中临时定义的变量。<br>3.静态变量：被static修饰的变量，整个类的成员共享。</p>
+<p>变量的作用域：<br>   不同类型变量的作用域和生命周期不同</p>
+<p>public class Cycle{<br>                       int var1=1;<br>                       static int var2=2;<br>                       public int add() {<br>                                              int var3=var1+var2;<br>                                              for(int i=0;i&lt;5;i++){<br>                                                    System.out.println(i);<br>                                               }<br>                                               return var3;<br>                        }<br>}
+       </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/08/Java%E5%8F%98%E9%87%8F/" data-id="cktba48060000xgw54egw8i9q" data-title="Java变量" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Java标识符" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/09/06/Java%E6%A0%87%E8%AF%86%E7%AC%A6/" class="article-date">
@@ -501,58 +548,12 @@
 
 
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/07/17/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-07-17T11:16:32.053Z" itemprop="datePublished">2021-07-17</time>
-</a>
+
+
+  <nav id="page-nav">
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/07/17/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/17/hello-world/" data-id="ckr7oecxz00004kw56klebj4z" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
 
 </section>
         
@@ -583,6 +584,10 @@
       <ul>
         
           <li>
+            <a href="/2021/09/08/Java%E5%8F%98%E9%87%8F/">Java变量</a>
+          </li>
+        
+          <li>
             <a href="/2021/09/06/Java%E6%A0%87%E8%AF%86%E7%AC%A6/">Java标识符</a>
           </li>
         
@@ -596,10 +601,6 @@
         
           <li>
             <a href="/2021/08/04/Java%E5%AD%A6%E4%B9%A03-4%E7%AB%A0/">Java学习3-4章</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/01/Java%E5%AD%A6%E4%B9%A0/">Java学习1-2章</a>
           </li>
         
       </ul>
