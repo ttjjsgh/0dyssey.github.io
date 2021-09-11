@@ -71,6 +71,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Java数据类型" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/11/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="article-date">
+  <time class="dt-published" datetime="2021-09-11T08:47:45.000Z" itemprop="datePublished">2021-09-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/11/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">Java数据类型</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>在Java中，数据类型分为基本数据类型和引用数据类型两大类。<br>基本数据类型有八种，分别是：<br>1.整型：byte、short、int、long<br>2.浮点型：float、double<br>3.字符型：char<br>4.布尔型：boolean</p>
+<p>整型：<br>数据类型       所占比特位数         取值范围<br>byte               8(1个字节)         -128<del>127<br>short             16(2……)           -32768</del>32767<br>int                 32(4……)          -2的31次方<del>2的31次方-1<br>long              64(8……)          -2的63次方</del>2的63次方-1</p>
+<p>浮点型：<br>数据类型       所占比特位数<br>float              32(4个字节）<br>double          64(8个字节）</p>
+<p>注：浮点数默认为double型，float型的数值有一个后缀“f“。</p>
+<p>例如<br>float a=123.45f;<br>double b=123.45;</p>
+<p>布尔类型：<br>boolean类型只有两个值：true和false，用于判定逻辑条件</p>
+<p>例如：<br>Boolean a=false；<br>Boolean b=true；</p>
+<p>代码：<br>public class Demo1 {<br>   public static void main(String[] args) {<br>          bооlеаn flаg1 = truе;<br>          boolean flag2 = false;<br>if(flag1) {<br>System. out. println(“a! “);<br>               }<br>if(! flag2) {<br>System. out. println(“b! “);<br>                 }<br>          }<br>}</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/11/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" data-id="cktfl3zct0000wcw5apmme4o8" data-title="Java数据类型" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Java变量" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/09/08/Java%E5%8F%98%E9%87%8F/" class="article-date">
@@ -508,46 +554,6 @@
 
 
   
-    <article id="post-逆向" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/07/21/%E9%80%86%E5%90%91/" class="article-date">
-  <time class="dt-published" datetime="2021-07-21T05:24:48.000Z" itemprop="datePublished">2021-07-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/07/21/%E9%80%86%E5%90%91/">逆向工程--“X86与X64”</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1.1寄存器组与数据类型<br>运行于保护模式下的x86体系有8个32位通用寄存器，EAX,EBX,ECX,EDX,EDI,ESI,EBP,ESP，这些寄存器还有部分可再分为8位和16位寄存器。<br>指令指针储存在EIP寄存器中。<br>部分GPR及其用途<br>ECX 循环计数<br>ESI 字符串/内存操作的源<br>EDI 宇符串/内存操作中的目标<br>EBP 帧基指针<br>ESP 栈指针<br>常用的数据类型有以下几种。<br>字节(Byte): 8位，比如AL、BL、CL。<br>字(Word): 16位， 比如AX、BX、CX。<br>双字( Double Word): 32位，比如EAX、EBX、ECX。<br>四字( Quad Word ): 64位。虽然x86并不支持64位GPR，但是在某些场景下可以把两个寄存器(通常是EDA:EAX )的内容合并起来当作64位值。比如，RDTSC指令会把一个64位值写人EDX: EAX寄存器。<br>32位寄存器EFLAGS用于存储算数运算状态以及其他运行状态（比如陷阱标志位）。举例来说，如果前一个ADD运算的结果是0，那么ZF标志位就会被设为1。最初EFLAGS中的标志位用于实现条件分支跳转。</p>
-<p>1.2指令集<br>x86数据移动方式：<br>1.立即数到寄存器<br>2.寄存器到寄存器<br>3.立即数到内存<br>4.寄存器到内存，或反方向<br>5.内存到内存（x86独有）<br>而ARM只支持通过加载/存储指令（LDR/STR）从内存读出或向内存写入数据。<br>x86的另一个重要特性是使用了变长指令–指令的长度从1到15字节不等。而在ARM上 ， 指令长度只能是2或4字节。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/21/%E9%80%86%E5%90%91/" data-id="ckrd25p4y0000ykw5eyta24wq" data-title="逆向工程--“X86与X64”" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -584,6 +590,10 @@
       <ul>
         
           <li>
+            <a href="/2021/09/11/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">Java数据类型</a>
+          </li>
+        
+          <li>
             <a href="/2021/09/08/Java%E5%8F%98%E9%87%8F/">Java变量</a>
           </li>
         
@@ -597,10 +607,6 @@
         
           <li>
             <a href="/2021/08/31/%E6%90%AD%E8%BD%BD%E5%AE%89%E5%8D%93%E7%A8%8B%E5%BA%8F%E5%88%86%E6%9E%90%E7%8E%AF%E5%A2%83/">搭载安卓程序分析环境</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/04/Java%E5%AD%A6%E4%B9%A03-4%E7%AB%A0/">Java学习3-4章</a>
           </li>
         
       </ul>
