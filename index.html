@@ -94,13 +94,20 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>在Java中，数据类型分为基本数据类型和引用数据类型两大类。<br>基本数据类型有八种，分别是：<br>1.整型：byte、short、int、long<br>2.浮点型：float、double<br>3.字符型：char<br>4.布尔型：boolean</p>
-<p>整型：<br>数据类型       所占比特位数         取值范围<br>byte               8(1个字节)         -128<del>127<br>short             16(2……)           -32768</del>32767<br>int                 32(4……)          -2的31次方<del>2的31次方-1<br>long              64(8……)          -2的63次方</del>2的63次方-1</p>
+<p>整型：<br>数据类型         所占比特位数               取值范围<br>byte               8(1个字节)                 -128<del>127<br>short             16(2……)                    -32768</del>32767<br>int                 32(4……)                     -2的31次方<del>2的31次方-1<br>long              64(8……)                   -2的63次方</del>2的63次方-1</p>
 <p>浮点型：<br>数据类型       所占比特位数<br>float              32(4个字节）<br>double          64(8个字节）</p>
 <p>注：浮点数默认为double型，float型的数值有一个后缀“f“。</p>
 <p>例如<br>float a=123.45f;<br>double b=123.45;</p>
 <p>布尔类型：<br>boolean类型只有两个值：true和false，用于判定逻辑条件</p>
 <p>例如：<br>Boolean a=false；<br>Boolean b=true；</p>
 <p>代码：<br>public class Demo1 {<br>   public static void main(String[] args) {<br>          bооlеаn flаg1 = truе;<br>          boolean flag2 = false;<br>if(flag1) {<br>System. out. println(“a! “);<br>               }<br>if(! flag2) {<br>System. out. println(“b! “);<br>                 }<br>          }<br>}</p>
+<p>字符型：<br>char：存放由单括号括起的单个字符，占两个字节，取值范围：[0,65535]</p>
+<p>例如：char c=’中’;<br>           char a=20013;</p>
+<p>数据类型转换：<br>1.自动类型转换：把一个表示数据范围小的数值或者变量赋给另一个表示数据范围大的变量。这种转换方式是自动的，直接书写即可。<br>例如：double num=10;</p>
+<p>2.强制类型转换：把一个表示数据范围大的数值或者变量赋值给数据范围小的变量。</p>
+<p>3.强制类型转换格式：目标数据类型 变量名=(目标数据类型）值或者变量。</p>
+<p>byte–&gt;short<br>                       –&gt;int–&gt;long–&gt;float–&gt;double<br>              char</p>
+<p>例如：<br>public class Demo1 {<br>         public static void main(String[] args) (<br>         char c = ‘中’;//占两个字节<br>         short s ;//占两个字节，去掉符号位，只有16位表示数值<br>         s = (short) c;//大范围强制转换小范围<br>int i = c;//自动转换<br>System.out.println(c+”在编码表中的序号是：”+i);<br>char a =20013;<br>System.out .println( ‘200013对应的char字符为：”+a);<br>}<br>}</p>
 
       
     </div>
@@ -447,7 +454,7 @@
 <p>11.类型转换：<br>自动类型转换：<br>1、必须两种类型互相兼容，比如：都是数值类型int和double，double和float<br>2、转换成的类型一定要比被转换的类型要大，比如：int转换成double<br>float转换成double<br>12.强制类型转换：<br>语法：数据类型 变量名 = (数据类型)变量名;<br>比如：double b = 3.14<br>int a = (int)b;<br>1、同类型的强制类型转换，比如：int a = (int)10.9;<br>2、不同类型的强制类型转换，只有char和int可以，通过ASCII码表去转换<br>比如：int b = (int)‘a’;</p>
 <p>13.运算符：<br>1、赋值运算符 =，将右边的值赋给左边<br>2、算术运算符+、-、、/、%，数学运算一样，先、/、%，后+、-<br>3、关系运算符（比较运算符）：&gt;、&lt;、&gt;=、&lt;=、==、!=<br>4、逻辑运算符</p>
 <p>boolean类型（布尔类型）：用于比较运算，只有两个值（true和false）默认false</p>
-<p>14.运算符的优先级：<br>1、最高优先级，英文状态下的小括号()<br>2、最低优先级，赋值运算符=<br>3、算术运算符&gt;关系运算符&gt;逻辑运算符&gt;赋值运算符<br>————————————————<br>版权声明：本文为CSDN博主「丿林」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44490662/article/details/103005559">https://blog.csdn.net/weixin_44490662/article/details/103005559</a></p>
+<p>14.运算符的优先级：<br>1、最高优先级，英文状态下的小括号()<br>2、最低优先级，赋值运算符=<br>3、算术运算符&gt;关系运算符&gt;逻辑运算符&gt;赋值运算符</p>
 
       
     </div>
