@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>创建第一个安卓项目 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="1.创建HelloWorld项目在Android Studio的欢迎界面点击Start a new Android Studio project,会打开-一个创建新项目的界面，如图1.10所示。其中Application name表示应用名称，此应用安装到手机之后会在手机上显示该名称，这里填HelloWorld。Company Domain表示公司域名，如果是个人开发者，没有公司域名的话， 那么就">
+<meta property="og:type" content="article">
+<meta property="og:title" content="创建第一个安卓项目">
+<meta property="og:url" content="http://example.com/2021/09/19/%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%89%E5%8D%93%E9%A1%B9%E7%9B%AE/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.创建HelloWorld项目在Android Studio的欢迎界面点击Start a new Android Studio project,会打开-一个创建新项目的界面，如图1.10所示。其中Application name表示应用名称，此应用安装到手机之后会在手机上显示该名称，这里填HelloWorld。Company Domain表示公司域名，如果是个人开发者，没有公司域名的话， 那么就">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-09-19T08:42:44.000Z">
+<meta property="article:modified_time" content="2021-09-19T12:52:11.746Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-创建第一个安卓项目" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/19/%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%89%E5%8D%93%E9%A1%B9%E7%9B%AE/" class="article-date">
+  <time class="dt-published" datetime="2021-09-19T08:42:44.000Z" itemprop="datePublished">2021-09-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      创建第一个安卓项目
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1.创建HelloWorld项目<br>在Android Studio的欢迎界面点击Start a new Android Studio project,会打开-一个创建新项目的界面，如图1.10所示。<br>其中Application name表示应用名称，此应用安装到手机之后会在手机上显示该名称，这里填HelloWorld。Company Domain表示公司域名，如果是个人开发者，没有公司域名的话， 那么就像我一样填example.com就可以了。Package name表示项目的包名，Android 系统就是通 过包名来区分不同应用程序的，因此包名-定要具有唯-一性。 Android Studio会根据应用名称和公司域名来自动帮我们生成合适的包名，如果不想使用默认生成的包名，也可以点击右侧的 Edit按钮自行修改。最后，Project location 表示项目代码存放的位置，如果没有特殊要求的话，这里也保持默认就可以了。<br>接下来对项目的最低兼容版本进行设置，选择Empty Activity创建空的活动就可以了。<br>2.启动模拟器<br>在Android Studio创建模拟器，选择Pixel XL4，再选择安卓7.0，创建好之后开启即可。<br>3.分析第一个安卓程序<br>任何一个新建的项目都会默认使用Android模式的项目结构，但这并不是项目真实的目录结构，而是被Android Studio转换过的。这种项目结构简洁明了，适合进行快速开发，但是对于我们新手来说并不易于理解。需要切换项目结构模式为Project。<br>Project展开有以下内容：</p>
+<ol>
+<li>.gradle和.idea<br>这两个目录下放置的都是Android Studio自动生成的一- 些文件，我们无须关心，也不要去手动编辑。</li>
+<li>app<br>项目中的代码、资源等内容几乎都是放置在这个目录下的,我们后面的开发工作也基本都是在这个目录下进行的，待会儿还会对这个目录单独展开进行讲解。</li>
+<li>build<br>这个目录不需要过多关心，它主要包含了一些在编译时自动生成的文件。</li>
+<li>gradle<br>这个目录下包含了gradle wrapper的配置文件,使用gradle wrapper的方式不需要提前将gradle下载好，而是会自动根据本地的缓存情况决定是否需要联网下载gradle。AndroidStudio默认没有 启用gradle wrapper的方式,如果需要打开,可以点击Android Studio导航栏-→File- →Settings- →Build, Execution, Deployment-→Gradle， 进行配置更改。</li>
+<li>.gitignore<br>这个文件是用来将指定的目录或文件排除在版本控制之外的,关于版本控制我们将在第5章中开始正式的学习。</li>
+<li>build.gradle<br>这是项目全局的gradle构建脚本,通常这个文件中的内容是不需要修改的。稍后我们将会详细分析gradle构建脚本中的具体内容。</li>
+<li>gradle.properties<br>这个文件是全局的gradle配置文件,在这里配置的属性将会影响到项目中所有的gradle编译脚本。</li>
+<li>gradlew和gradlew.bat<br>这两个文件是用来在命令行界面中执行gradle 命令的，其中gradlew 是在Linux或Mac系统 中使用的，gradlew.bat 是在Windows系统中使用的。</li>
+<li>HelloWorld.iml<br>iml文件是所有IntelliJ IDEA 项目都会自动生成的一一个文件( Android Studio 是基于IntelliJ IDEA开发的)，用于标识这是一个IntelliJ IDEA项目，我们不需要修改这个文件中的任何内容。 </li>
+<li>local.properties<br>这个文件用于指定本机中的Android SDK路径,通常内容都是自动生成的,我们并不需要修改。除非你本机中的AndroidSDK位置发生了变化，那么就将这个文件中的路径改成新的位置即可。</li>
+<li>settings.gradle<br>这个文件用于指定项目中所有引人的模块。由于HelloWorld项目中就只有一个app模块,因此该文件中也就只引入了app这一个模块。通常情况下模块的引人都是自动完成的，需要我们手动去修改这个文件的场景可能比较少。</li>
+</ol>
+<p>现在整个项目的外层目录结构已经介绍完了。你会发现，除了app目录之外,大多数的文件 和目录都是自动生成的，我们并不需要进行修改。app目录下的内容才是我 们以后的工作重点。<br>以下是对app目录下的内容更为详细的分析。</p>
+<ol>
+<li>build<br>这个目录和外层的build目录类似，主要也是包含了一些在编译时自动生成的文件，不过它里面的内容会更多更杂，我们不需要过多关心。</li>
+<li>libs .<br>如果你的项目中使用到了第三方jar包,就需要把这些jar包都放在libs目录下，放在这个目录下的jar包都会被自动添加到构建路径里去。</li>
+<li>androidTest<br>此处是用来编写Android Test测试用例的，可以对项目进行- -些自动化测试。</li>
+<li>java<br>毫无疑问，java目录是放置所有Java代码的地方，展开该目录,将看到我们刚才创建的HelloWorldActivity文件就在里面。</li>
+<li>res<br>这个目录下的内容就有点多了。简单点说，就是在项目中使用到的所有图片、布局、字符串等资源都要存放在这个目录下。当然这个目录下还有很多子目录，图片放在drawable目录下，布局放在layout目录下，字符串放在values目录下，所以你不用担心会把整个res目录弄得乱糟糟的。</li>
+<li>AndroidManifest.xml<br>这是整个Android项目的配置文件,你在程序中定义的所有四大组件都需要在这个文件里注册，另外还可以在这个文件中给应用程序添加权限声明。由于这个文件以后会经常用到，我们用到的时候再做详细说明。</li>
+<li>test<br>此处是用来编写Unit Test测试用例的，是对项目进行自动化测试的另一种方式。</li>
+<li>.gitignore<br>这个文件用于将app模块内的指定的目录或文件排除在版本控制之外，作用和外层的.gitignore文件类似。</li>
+<li>app.iml<br>IntelliJ IDEA项目自动生成的文件，我们不需要关心或修改这个文件中的内容。</li>
+<li>build.gradle<br>这是app模块的gradle 构建脚本，这个文件中会指定很多项目构建相关的配置,我们稍后将会详细分析gradle构建脚本中的具体内容。</li>
+<li>proguard-rules.pro<br>这个文件用于指定项目代码的混淆规则，当代码开发完成后打成安装包文件,如果不希望代码被别人破解，通常会将代码进行混淆，从而让破解者难以阅读。<br>这样整个项目的目录结构就都介绍完了。</li>
+</ol>
+<p>接下来我们一起分析一-下HelloWorld 项目究竟是怎么运行起来的吧。首先打开Android- Manifest.xml 文件，从中可以找到如下代码:<br><activity android :name=" . HelloWorldActivity"><br><intent- filter><br><action android : name=" android . intent . action.MAIN" /><br><category android:name=" android . intent. category . LAUNCHER" /><br>&lt;/intent- filter&gt;<br></activity><br>这段代码表示对HelloWorldActivity这个活动进行注册，没有在AndroidManifest.xml里注册 的活动是不能使用的。其中intent- filter里的两行代码非常重要，<action android: name= " android. intent . action. MAIN" />和&lt;category android : name= :” android. intent . category . LAUNCHER” /&gt;表示HelloWorldActivity是这个项目的主活动，在手机上点击应用图标，首先启动的就是这个活动。<br>那HelloWorldActivity 具体又有什么作用呢?在Android四大组件中，活动是Android应用程序的门面，凡是在应用中看得到的东西,都是放在活动中的。<br>打开HelloWorldActivity,代码如下所示:<br>public class HelloWo rldActivity extends AppCompatActivity {<br>@Override<br>protected void onCreate (Bundle savedInstanceState) { super . onCreate (savedInstanceState);<br>setContentView(R. layout . hello_ world_ _layout);</p>
+<p>首先我们可以看到，HelloWorldActivity 是继承自AppCompatActivity的，这是一种向下兼容 的Activity，可以将Activity在各个系统版本中增加的特性和功能最低兼容到Android 2.1系统。 Activity是Android系统提供的一个活 动基类，我们项目中所有的活动都必须继承它或者它的子类才能拥有活动的特性(AppCompatActivity是Activity的子类)。然后可以看到HelloWorldActivity中有一个onCreate()方法,这个方法是-一个活动被创建时必定要执行的方法, 其中只有两行代码，并且没有Hello World!的字样。 那么图1.24 中显示的Hello World!是在哪里定义的呢?</p>
+<p>其实Android程序的设计讲究逻辑和视图分离，因此是不推荐在活动中直接编写界面的，更加通用的一-种做法是,在布局文件中编写界面,然后在活动中引人进来。可以看到,在onCreate(). 方法的第二行调用了setContentView()方法， 就是这个方法给当前的活动引入了一个 hello_ world_ layout 布局,那Hello World!一定就是在这里定义的了!我们打开这个文件看一看。 布局文件都是定义在res/layout 目录下的，当展开layout目录，会看到hello_ <em>world</em></p>
+<p>&lt;RelativeLayout xmlns :android=”http: //schemas . android . com/apk/ res/ android”</p>
+<p>xmlns: tools=”<a target="_blank" rel="noopener" href="http://schemas/">http://schemas</a> . android. com/ tools”</p>
+<p>android:id=”@+id/hello_ world_ layout “</p>
+<p>android:layout_ width= “match_ parent”</p>
+<p>android: layout_ height= “ match_ parent “</p>
+<p>android : paddingBottom=”@dimen/activity_ <em>vertical</em> margin”</p>
+<p>android: paddingLeft=”@dimen/activity_ <em>horizontal</em> margin”</p>
+<p>android : paddingRight=”@dimen/ activity_ horizontal_ margin”</p>
+<p>android : paddingTop=”@dimen/activity_ vertical_ margin”</p>
+<p>tools: context=” com. example . helloworld . Hel loWorldActivity”&gt;</p>
+<p>&lt;TextView</p>
+<p>and roid: layout_ Width=”wrap_ content “</p>
+<p>android: layout_ height=”wrap_ content ‘</p>
+<p>android:text=”Hello World!” /&gt;</p>
+</RelativeLayout>
+
+<p>现在只需要看到上面代码中有一个TextView,这是Android 系统提供的一个控件，用于在布局中显示文字的。终于在 TextView中看到了Hello World!的字样!哈哈!终于找到了，原来就是通过android:text= “Hello World!”这句代码定义的。<br>这样我就将HelloWorld项目的目录结构以及基本的执行过程都分析完了，下一小节就来学习一下项目中所包含的资源。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/19/%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%89%E5%8D%93%E9%A1%B9%E7%9B%AE/" data-id="cktr7ywn800001sw5dfcpaohw" data-title="创建第一个安卓项目" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/09/11/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Java数据类型</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/09/19/%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%89%E5%8D%93%E9%A1%B9%E7%9B%AE/">创建第一个安卓项目</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/11/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">Java数据类型</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/08/Java%E5%8F%98%E9%87%8F/">Java变量</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/06/Java%E6%A0%87%E8%AF%86%E7%AC%A6/">Java标识符</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/05/%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/">编写第一个Java程序</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

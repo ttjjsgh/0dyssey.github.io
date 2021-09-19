@@ -71,6 +71,45 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-逆向工程-“X86与X64”" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/07/24/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B-%E2%80%9CX86%E4%B8%8EX64%E2%80%9D/" class="article-date">
+  <time class="dt-published" datetime="2021-07-24T03:20:40.000Z" itemprop="datePublished">2021-07-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/07/24/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B-%E2%80%9CX86%E4%B8%8EX64%E2%80%9D/">逆向工程--“X86与X64”</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1.2.1语法<br>根据汇编器/反汇编器的不同，x86汇编代码有两种语法记法： Intel和AT&amp;T<br>INTEL:<br>MOV ECX， AABBCCDDH<br>MOV ECX， [EAX〕<br>MOV ECX，EAX<br>MOVL  $OXAABBCCDD,<br>AT&amp;T:<br>MOVL $OXAABBCCDD, *ECX<br>MOVL { <em>EAX)，%EAX<br>1.2.2数据移动<br>指令用于操作来自寄存器或主内存中的数据。．移动数据最常用的指令是MOV，它最简单的用途就是把寄存器中的值或立即数移动到另一个寄存器中。比如：<br>    01；BE 3 F 0 0 0 F 00    esi, 0F003Fh；设置ESI    0xF003<br>    02：8B Fl    eSX，ECX    ；设置ESI ECX<br>M指令的另一常见用法是从内存读出／写人数据。与其他汇编语言惯用法一样，x86使用方括号[ ]标识内存地址。（唯一的例外是LEA指令，它也使用0，但不一定是指内存到内存访问有几种不同的方法，我们从最简单的开始。<br>基本代码与汇编语言相同<br>1.3.1 算术运算<br>x86指令集为加减乘除这样的基本算术运算提供了本地支持，对像AND、OR、XOR、NOT和左右位移这样的位操作提供了相应的指令。除了乘除之外，其他运算指令的用法都是一目了然的<br>例如：<br>ADD ECX,14H<br>SUB ECX，EAX<br>SUB ESP, 0CH<br>INC ECX<br>DEC EDI<br>AND ECX,7<br>XOR EAX, EAX<br>NOT EDI<br>在实际代码中左移和右移指令，这两个指令通常用于优化乘数和除数为2的幂的乘除操作。这种优化方法有时也称为运算强度简化（strength reduction)，因为它把计算代价高的运算替换为计算代价低的运算。举例来说，整数除法是一个相对比较慢的运算，而当除数为2的幂时，可以简化为右移位运算，如100／2相当于100&gt;&gt; 1。类似地，乘数为2的幂的乘法运算也可以简化为左移位运算，如100</em> 2相当于100&lt;&lt; 1。<br>01： F7 El    mul    ecx          EDX：EAX    EAX ECX<br>02； F7 66 04    mul    dword ptr [esi+4]       EDX:EAX EAX dword_at(ESI+4)<br>03： F6 El    mul    cl      AX = AL 女CL<br>04： 6 6 F 7 E2 mul 考虑下面几个具体的例子：    dx          DX:AX    AX女DX<br>01： B8 03 0 0 00 0 0         eax, 3         set EAX=3<br>02： B9 22 22 2 2 22         eCX，2 2222222 h      set ECX= 0x22222222<br>无符号和有符号乘法分别通过MUL和工MUL指令进行。MUL指令的一般形式为：MUL寄存器/内存。也就是说，它只能应用于寄存器或内存数值。<br>1.3.2 栈操作与函数调用<br>栈（stack)是编程语言和操作系统的基本数据结构。从概念上讲，栈是一种后进先出数据结构，它支持两种操作：压栈(push)和出栈（pop）。压栈是指把数值保存到栈的顶端，出栈是指从栈顶去除数据。具体来讲，x86上的栈是ESP指向的一段连续内存区域，它向下增长。压栈出栈操作分别通过PUSH/POP指令进行，这意味着ESP值会被修改。PUSH指令递减ESP值，然后把数据写人ESP指向的位置；POP指令读出ESP指向位置的数据并递增ESP。默认的自动递增／递减值为4，但是通过前缀这个值也可以替换为1或者2。实际应用中，这个值几乎总是4，因为OS要求栈双字对齐。<br>高级语言中有函数的概念，函数可以被调用也可以返回，而处理器本身并没有提供这样的抽象。在最底层，处理器只操作具体对象，比如寄存器或内存中的数据。在机器语言这一层级如何实现函数呢？正是通过栈数据结构实现的！<br>常见标志位：<br>ZF（Zero Flag,零标志位）：指示之前算术运算的结果是否为零。<br>SF（Sign Flag,符号标志位）：设为当前结果的最高有效位。<br>CF（Carry Flag,借位标志位）：指示当前结果是否需要借位。对无符号整数有效。<br>OF（Overflow Flag,溢出标志位）：指示当前结果是是否超过了最大值。对有符号整数有效。<br>常用条件代码<br>B/NAE 小于/既不大于也不等于。用于无符号运算<br>NB/AE 不小于/大于或等于。用于无符号运算<br>E/Z 等于／为零<br>NE/NZ 不等于／不为零<br>L 小于/既不大于也不等于。用于有符号运算<br>GE/NL 大于或等于／不小于。用于有符号运算<br>G/NLE 大于／不小于也不等于。用于有符号运算</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/07/24/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B-%E2%80%9CX86%E4%B8%8EX64%E2%80%9D/" data-id="ckrh8ght0000020w56tnt6yna" data-title="逆向工程--“X86与X64”" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-逆向" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/07/21/%E9%80%86%E5%90%91/" class="article-date">
@@ -198,6 +237,10 @@
       <ul>
         
           <li>
+            <a href="/2021/09/19/%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%89%E5%8D%93%E9%A1%B9%E7%9B%AE/">创建第一个安卓项目</a>
+          </li>
+        
+          <li>
             <a href="/2021/09/11/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">Java数据类型</a>
           </li>
         
@@ -211,10 +254,6 @@
         
           <li>
             <a href="/2021/09/05/%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/">编写第一个Java程序</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/31/%E6%90%AD%E8%BD%BD%E5%AE%89%E5%8D%93%E7%A8%8B%E5%BA%8F%E5%88%86%E6%9E%90%E7%8E%AF%E5%A2%83/">搭载安卓程序分析环境</a>
           </li>
         
       </ul>
