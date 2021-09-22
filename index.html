@@ -100,12 +100,15 @@
 <p>&lt;/ resources&gt;</p>
 <p>可以看到，这里定义了一个应用程序名的字符串，我们有以下两种方式来引用它。</p>
 <p>1.在代码中通过R.string. hello_ world 可以获得该字符串的引用。</p>
-<p>2.在XML中通过@string/hello_ world可以获得该字符串的引用。<br>基本的语法就是上面这两种方式，其中string部分是可以替换的，如果是引用的图片资源，就可以替换成drawable,如果是引用的应用图标就可以替换成mipmap,如果是引用的布局文件就可以替换成layout,以此类推。<br>下面举一个简单的例子来帮助理解，打开AndroidManifest.xml文件，找到如下代码:<br><application
-android: allowBackup="true"
-android: icon="@mi pmap/ ic_ launcher"
-android: label="@string/ app_ name"
-android: supportsRtl="t rue"
-android: theme= " @style/ AppTheme"><br>…<br></application></p>
+<p>2.在XML中通过@string/hello_ world可以获得该字符串的引用。<br>基本的语法就是上面这两种方式，其中string部分是可以替换的，如果是引用的图片资源，就可以替换成drawable,如果是引用的应用图标就可以替换成mipmap,如果是引用的布局文件就可以替换成layout,以此类推。<br>下面举一个简单的例子来帮助理解，打开AndroidManifest.xml文件，找到如下代码:<br>&lt;application</p>
+<p>android: allowBackup=”true”</p>
+<p>android: icon=”@mi pmap/ ic_ launcher”</p>
+<p>android: label=”@string/ app_ name”</p>
+<p>android: supportsRtl=”t rue”</p>
+<p>android: theme= “ @style/ AppTheme”&gt;</p>
+<p>…</p>
+</application>
+
 <p>注：其中，HelloWorld项目的应用图标就是通过android:icon属性来指定的,应用的名称则是 通过android: label属性指定的。可以看到,这里对资源引用的方式正是刚刚学习的在XML中引用资源的语法。</p>
 <p>总结：经过这部分学习，已经充分了解到了修改应用的图标或者名称的方法。</p>
 
