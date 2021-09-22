@@ -71,6 +71,59 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-资源详解1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/22/%E8%B5%84%E6%BA%90%E8%AF%A6%E8%A7%A31/" class="article-date">
+  <time class="dt-published" datetime="2021-09-22T08:24:29.000Z" itemprop="datePublished">2021-09-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/22/%E8%B5%84%E6%BA%90%E8%AF%A6%E8%A7%A31/">资源详解1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>如果展开res目录看一下，其实里面的东西还是挺多的，很容易让人看得眼花缭乱，其实归纳一下,res目录就变得非常简单了。所有以drawable开头的文件夹都是用来放图片的，所有以mipmap开头的文件夹都是用来放应用图标的，所有以 values开头的文件夹都是用来放字符串、样式、颜色等配置的，layout 文件夹是用来放布局文件的。<br>之所以有这么多mipmap开头的文件夹，其实主要是为了让程序能够更好地兼容各种设备。 drawable文件夹也是相同的道理，虽然Android Studio没有帮我们自动生成,但是我们应该自己创 建drawable-hdpi、drawable -xhdpi、drawable-xxhdpi 等文件夹。在制作程序的时候最好能够给同一张图片提供几个不同分辨率的版本，分别放在这些文件夹下，然后当程序运行的时候，会自动根据当前运行设备分辨率的高低选择加载哪个文件夹下的图片。当然这只是理想情况，更多的时候美工只会提供给我们一份图片，这时就把所有图片都放在drawable xxhdpi文件夹下就好了。 知道了res 目录下每个文件夹的含义，我们再来看- -下如何去使用这些资源吧。<br>打开res/values/strings.xml文件，内容如下所示:</p>
+<resources>
+
+<p><string name= " app_ name " >HelloWorld</string></p>
+<p>&lt;/ resources&gt;</p>
+<p>可以看到，这里定义了一个应用程序名的字符串，我们有以下两种方式来引用它。</p>
+<p>1.在代码中通过R.string. hello_ world 可以获得该字符串的引用。</p>
+<p>2.在XML中通过@string/hello_ world可以获得该字符串的引用。<br>基本的语法就是上面这两种方式，其中string部分是可以替换的，如果是引用的图片资源，就可以替换成drawable,如果是引用的应用图标就可以替换成mipmap,如果是引用的布局文件就可以替换成layout,以此类推。<br>下面举一个简单的例子来帮助理解，打开AndroidManifest.xml文件，找到如下代码:<br><application
+android: allowBackup="true"
+android: icon="@mi pmap/ ic_ launcher"
+android: label="@string/ app_ name"
+android: supportsRtl="t rue"
+android: theme= " @style/ AppTheme"><br>…<br></application></p>
+<p>注：其中，HelloWorld项目的应用图标就是通过android:icon属性来指定的,应用的名称则是 通过android: label属性指定的。可以看到,这里对资源引用的方式正是刚刚学习的在XML中引用资源的语法。</p>
+<p>总结：经过这部分学习，已经充分了解到了修改应用的图标或者名称的方法。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/22/%E8%B5%84%E6%BA%90%E8%AF%A6%E8%A7%A31/" data-id="cktv96mt40000uow516kbfubb" data-title="资源详解1" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-创建第一个安卓项目" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/09/19/%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%89%E5%8D%93%E9%A1%B9%E7%9B%AE/" class="article-date">
@@ -557,57 +610,6 @@
 
 
   
-    <article id="post-数据宽度" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/07/29/%E6%95%B0%E6%8D%AE%E5%AE%BD%E5%BA%A6/" class="article-date">
-  <time class="dt-published" datetime="2021-07-29T05:20:29.000Z" itemprop="datePublished">2021-07-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/07/29/%E6%95%B0%E6%8D%AE%E5%AE%BD%E5%BA%A6/">数据宽度</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>数据宽度<br>数据的宽度，根据计算机的硬件影响，（超过最多宽度的数据会被丢弃）<br>计算机只识别0和1，（电信号只有两种状态）<br>0000    0001    0010    0011    0100    0101    0110    0111    1000    1001    1010    1011    1100    1101    1110    1111<br>0    1    2    3    4    5    6    7    8    9    A    B    C    D    E<br>F</p>
-<p>4位宽度表示：假设计算机只能存储4位2进制数<br>正数存储：<br>当看作有符号数时：1. 正数：第一位是0<br>                  2. 负数：第一位是1<br>负数存储：<br>8位宽度表示：假设计算机只能存储8位二进制数<br>正数存储：<br>16位宽度表示：假设计算机只能存储16位二进制数<br>32位宽度表示：假设计算机只能存储32位二进制数<br>重要的计量单位：<br>BYTE         字节        8BIT<br>WORD        字        16BIT      2字节<br>DWORD    双字      32BIT      4字节</p>
-<p>D：double  双精度<br>OD ：超过数据宽度会被砍掉<br>逻辑运算<br>二进制的逻辑运算：</p>
-<ol>
-<li>或（ or    | ），只要有一个为1就是1</li>
-<li>与（  and    &amp; ）两个都为1才是1             </li>
-<li>异或（  xor    ^）不一样为1</li>
-<li>非（not    !）1是0，0是1</li>
-</ol>
-<p>CPU只能做加法运算，存储数据的容器：CPU里—寄存器，内存条—内存（慢）</p>
-<p>简单的加密算法：（异或）</p>
-<p>要加密的数据——》密钥——》加密后的数据——》密钥——》解密后的数据</p>
-<p>注：八进制数2-5  在计算器中的结果是：1777777777777777777775  — —  存储为FD<br>数据类型：十进制D，二进制B，十六进制H</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/29/%E6%95%B0%E6%8D%AE%E5%AE%BD%E5%BA%A6/" data-id="ckrogyfgc0000d4w5fjshajud" data-title="数据宽度" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -644,6 +646,10 @@
       <ul>
         
           <li>
+            <a href="/2021/09/22/%E8%B5%84%E6%BA%90%E8%AF%A6%E8%A7%A31/">资源详解1</a>
+          </li>
+        
+          <li>
             <a href="/2021/09/19/%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%89%E5%8D%93%E9%A1%B9%E7%9B%AE/">创建第一个安卓项目</a>
           </li>
         
@@ -657,10 +663,6 @@
         
           <li>
             <a href="/2021/09/06/Java%E6%A0%87%E8%AF%86%E7%AC%A6/">Java标识符</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/05/%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/">编写第一个Java程序</a>
           </li>
         
       </ul>
