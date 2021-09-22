@@ -1,719 +1,706 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
+    <title></title>
+    <meta name="author" content="John Doe">
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+    
+    <meta property="og:site_name" content="ttjjsgh"/>
+
+    
+    <meta property="og:image" content=""/>
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="ttjjsgh" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <meta name="generator" content="Hexo 5.4.0"></head>
 
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
+
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">ttjjsgh</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            读书
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    读书
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+    </ul>
+</div>
+
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
     </div>
-  </div>
-</header>
+    <div id="search-result" class="search-result col s12">
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-资源详解1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/22/%E8%B5%84%E6%BA%90%E8%AF%A6%E8%A7%A31/" class="article-date">
-  <time class="dt-published" datetime="2021-09-22T08:24:29.000Z" itemprop="datePublished">2021-09-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/22/%E8%B5%84%E6%BA%90%E8%AF%A6%E8%A7%A31/">资源详解1</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>如果展开res目录看一下，其实里面的东西还是挺多的，很容易让人看得眼花缭乱，其实归纳一下,res目录就变得非常简单了。所有以drawable开头的文件夹都是用来放图片的，所有以mipmap开头的文件夹都是用来放应用图标的，所有以 values开头的文件夹都是用来放字符串、样式、颜色等配置的，layout 文件夹是用来放布局文件的。<br>之所以有这么多mipmap开头的文件夹，其实主要是为了让程序能够更好地兼容各种设备。 drawable文件夹也是相同的道理，虽然Android Studio没有帮我们自动生成,但是我们应该自己创 建drawable-hdpi、drawable -xhdpi、drawable-xxhdpi 等文件夹。在制作程序的时候最好能够给同一张图片提供几个不同分辨率的版本，分别放在这些文件夹下，然后当程序运行的时候，会自动根据当前运行设备分辨率的高低选择加载哪个文件夹下的图片。当然这只是理想情况，更多的时候美工只会提供给我们一份图片，这时就把所有图片都放在drawable xxhdpi文件夹下就好了。 知道了res 目录下每个文件夹的含义，我们再来看- -下如何去使用这些资源吧。<br>打开res/values/strings.xml文件，内容如下所示:</p>
-<resources>
-
-<p><string name= " app_ name " >HelloWorld</string></p>
-<p>&lt;/ resources&gt;</p>
-<p>可以看到，这里定义了一个应用程序名的字符串，我们有以下两种方式来引用它。</p>
-<p>1.在代码中通过R.string. hello_ world 可以获得该字符串的引用。</p>
-<p>2.在XML中通过@string/hello_ world可以获得该字符串的引用。<br>基本的语法就是上面这两种方式，其中string部分是可以替换的，如果是引用的图片资源，就可以替换成drawable,如果是引用的应用图标就可以替换成mipmap,如果是引用的布局文件就可以替换成layout,以此类推。<br>下面举一个简单的例子来帮助理解，打开AndroidManifest.xml文件，找到如下代码:<br>&lt;application</p>
-<p>android: allowBackup=”true”</p>
-<p>android: icon=”@mi pmap/ ic_ launcher”</p>
-<p>android: label=”@string/ app_ name”</p>
-<p>android: supportsRtl=”t rue”</p>
-<p>android: theme= “ @style/ AppTheme”&gt;</p>
-<p>…</p>
-</application>
-
-<p>注：其中，HelloWorld项目的应用图标就是通过android:icon属性来指定的,应用的名称则是 通过android: label属性指定的。可以看到,这里对资源引用的方式正是刚刚学习的在XML中引用资源的语法。</p>
-<p>总结：经过这部分学习，已经充分了解到了修改应用的图标或者名称的方法。</p>
-
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/22/%E8%B5%84%E6%BA%90%E8%AF%A6%E8%A7%A31/" data-id="cktv96mt40000uow516kbfubb" data-title="资源详解1" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
+</div>
+
+
+    <main>
+        
+
+
+
+<div id="article-list" class="container main-container">
+    
+        <article class="simple-article">
+    <div class="card">
+        <div class="card-content">
+            <div class="article-title">
+                
+    
+        <h1 class="indigo-link-context"><a href="/2021/09/22/%E8%B5%84%E6%BA%90%E8%AF%A6%E8%A7%A31/">资源详解1</a></h1>
+    
+
+
+            </div>
+
+            <time class="pink-link-context" datetime="2021-09-22T08:24:29.000Z"><a href="/2021/09/22/%E8%B5%84%E6%BA%90%E8%AF%A6%E8%A7%A31/">2021-09-22</a></time>
+
+            
+
+
+            
+        </div>
+
+        
+    </div>
 </article>
 
+    
+        <article class="simple-article">
+    <div class="card">
+        <div class="card-content">
+            <div class="article-title">
+                
+    
+        <h1 class="indigo-link-context"><a href="/2021/09/19/%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%89%E5%8D%93%E9%A1%B9%E7%9B%AE/">创建第一个安卓项目</a></h1>
+    
 
 
-  
-    <article id="post-创建第一个安卓项目" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/19/%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%89%E5%8D%93%E9%A1%B9%E7%9B%AE/" class="article-date">
-  <time class="dt-published" datetime="2021-09-19T08:42:44.000Z" itemprop="datePublished">2021-09-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+            </div>
+
+            <time class="pink-link-context" datetime="2021-09-19T08:42:44.000Z"><a href="/2021/09/19/%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%89%E5%8D%93%E9%A1%B9%E7%9B%AE/">2021-09-19</a></time>
+
+            
+
+
+            
+        </div>
+
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/19/%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%89%E5%8D%93%E9%A1%B9%E7%9B%AE/">创建第一个安卓项目</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1.创建HelloWorld项目<br>在Android Studio的欢迎界面点击Start a new Android Studio project,会打开-一个创建新项目的界面，如图1.10所示。<br>其中Application name表示应用名称，此应用安装到手机之后会在手机上显示该名称，这里填HelloWorld。Company Domain表示公司域名，如果是个人开发者，没有公司域名的话， 那么就像我一样填example.com就可以了。Package name表示项目的包名，Android 系统就是通 过包名来区分不同应用程序的，因此包名-定要具有唯-一性。 Android Studio会根据应用名称和公司域名来自动帮我们生成合适的包名，如果不想使用默认生成的包名，也可以点击右侧的 Edit按钮自行修改。最后，Project location 表示项目代码存放的位置，如果没有特殊要求的话，这里也保持默认就可以了。<br>接下来对项目的最低兼容版本进行设置，选择Empty Activity创建空的活动就可以了。<br>2.启动模拟器<br>在Android Studio创建模拟器，选择Pixel XL4，再选择安卓7.0，创建好之后开启即可。<br>3.分析第一个安卓程序<br>任何一个新建的项目都会默认使用Android模式的项目结构，但这并不是项目真实的目录结构，而是被Android Studio转换过的。这种项目结构简洁明了，适合进行快速开发，但是对于我们新手来说并不易于理解。需要切换项目结构模式为Project。<br>Project展开有以下内容：</p>
-<ol>
-<li>.gradle和.idea<br>这两个目录下放置的都是Android Studio自动生成的一- 些文件，我们无须关心，也不要去手动编辑。</li>
-<li>app<br>项目中的代码、资源等内容几乎都是放置在这个目录下的,我们后面的开发工作也基本都是在这个目录下进行的，待会儿还会对这个目录单独展开进行讲解。</li>
-<li>build<br>这个目录不需要过多关心，它主要包含了一些在编译时自动生成的文件。</li>
-<li>gradle<br>这个目录下包含了gradle wrapper的配置文件,使用gradle wrapper的方式不需要提前将gradle下载好，而是会自动根据本地的缓存情况决定是否需要联网下载gradle。AndroidStudio默认没有 启用gradle wrapper的方式,如果需要打开,可以点击Android Studio导航栏-→File- →Settings- →Build, Execution, Deployment-→Gradle， 进行配置更改。</li>
-<li>.gitignore<br>这个文件是用来将指定的目录或文件排除在版本控制之外的,关于版本控制我们将在第5章中开始正式的学习。</li>
-<li>build.gradle<br>这是项目全局的gradle构建脚本,通常这个文件中的内容是不需要修改的。稍后我们将会详细分析gradle构建脚本中的具体内容。</li>
-<li>gradle.properties<br>这个文件是全局的gradle配置文件,在这里配置的属性将会影响到项目中所有的gradle编译脚本。</li>
-<li>gradlew和gradlew.bat<br>这两个文件是用来在命令行界面中执行gradle 命令的，其中gradlew 是在Linux或Mac系统 中使用的，gradlew.bat 是在Windows系统中使用的。</li>
-<li>HelloWorld.iml<br>iml文件是所有IntelliJ IDEA 项目都会自动生成的一一个文件( Android Studio 是基于IntelliJ IDEA开发的)，用于标识这是一个IntelliJ IDEA项目，我们不需要修改这个文件中的任何内容。 </li>
-<li>local.properties<br>这个文件用于指定本机中的Android SDK路径,通常内容都是自动生成的,我们并不需要修改。除非你本机中的AndroidSDK位置发生了变化，那么就将这个文件中的路径改成新的位置即可。</li>
-<li>settings.gradle<br>这个文件用于指定项目中所有引人的模块。由于HelloWorld项目中就只有一个app模块,因此该文件中也就只引入了app这一个模块。通常情况下模块的引人都是自动完成的，需要我们手动去修改这个文件的场景可能比较少。</li>
-</ol>
-<p>现在整个项目的外层目录结构已经介绍完了。除了app目录之外,大多数的文件和目录都是自动生成的，我们并不需要进行修改。app目录下的内容才是我们以后的工作重点。<br>以下是对app目录下的内容更为详细的分析。</p>
-<ol>
-<li>build<br>这个目录和外层的build目录类似，主要也是包含了一些在编译时自动生成的文件，不过它里面的内容会更多更杂，我们不需要过多关心。</li>
-<li>libs .<br>如果你的项目中使用到了第三方jar包,就需要把这些jar包都放在libs目录下，放在这个目录下的jar包都会被自动添加到构建路径里去。</li>
-<li>androidTest<br>此处是用来编写Android Test测试用例的，可以对项目进行- -些自动化测试。</li>
-<li>java<br>毫无疑问，java目录是放置所有Java代码的地方，展开该目录,将看到我们刚才创建的HelloWorldActivity文件就在里面。</li>
-<li>res<br>这个目录下的内容就有点多了。简单点说，就是在项目中使用到的所有图片、布局、字符串等资源都要存放在这个目录下。当然这个目录下还有很多子目录，图片放在drawable目录下，布局放在layout目录下，字符串放在values目录下，所以你不用担心会把整个res目录弄得乱糟糟的。</li>
-<li>AndroidManifest.xml<br>这是整个Android项目的配置文件,你在程序中定义的所有四大组件都需要在这个文件里注册，另外还可以在这个文件中给应用程序添加权限声明。由于这个文件以后会经常用到，我们用到的时候再做详细说明。</li>
-<li>test<br>此处是用来编写Unit Test测试用例的，是对项目进行自动化测试的另一种方式。</li>
-<li>.gitignore<br>这个文件用于将app模块内的指定的目录或文件排除在版本控制之外，作用和外层的.gitignore文件类似。</li>
-<li>app.iml<br>IntelliJ IDEA项目自动生成的文件，我们不需要关心或修改这个文件中的内容。</li>
-<li>build.gradle<br>这是app模块的gradle 构建脚本，这个文件中会指定很多项目构建相关的配置,我们稍后将会详细分析gradle构建脚本中的具体内容。</li>
-<li>proguard-rules.pro<br>这个文件用于指定项目代码的混淆规则，当代码开发完成后打成安装包文件,如果不希望代码被别人破解，通常会将代码进行混淆，从而让破解者难以阅读。<br>这样整个项目的目录结构就都介绍完了。</li>
-</ol>
-<p>接下来分析一下HelloWorld项目究竟是怎么运行起来的吧。首先打开Android- Manifest.xml 文件，从中可以找到如下代码:<br><activity android :name=" . HelloWorldActivity"><br><intent- filter><br><action android : name=" android . intent . action.MAIN" /><br><category android:name=" android . intent. category . LAUNCHER" /><br>&lt;/intent- filter&gt;<br></activity><br>这段代码表示对HelloWorldActivity这个活动进行注册，没有在AndroidManifest.xml里注册 的活动是不能使用的。其中intent- filter里的两行代码非常重要，<action android: name= " android. intent . action. MAIN" />和&lt;category android : name= :” android. intent . category . LAUNCHER” /&gt;表示HelloWorldActivity是这个项目的主活动，在手机上点击应用图标，首先启动的就是这个活动。<br>那HelloWorldActivity 具体又有什么作用呢?在Android四大组件中，活动是Android应用程序的门面，凡是在应用中看得到的东西,都是放在活动中的。<br>打开HelloWorldActivity,代码如下所示:<br>public class HelloWo rldActivity extends AppCompatActivity {<br>@Override<br>protected void onCreate (Bundle savedInstanceState) { super . onCreate (savedInstanceState);<br>setContentView(R. layout . hello_ world_ _layout);</p>
-<p>首先我们可以看到，HelloWorldActivity 是继承自AppCompatActivity的，这是一种向下兼容 的Activity，可以将Activity在各个系统版本中增加的特性和功能最低兼容到Android 2.1系统。 Activity是Android系统提供的一个活动基类，我们项目中所有的活动都必须继承它或者它的子类才能拥有活动的特性(AppCompatActivity是Activity的子类)。然后可以看到HelloWorldActivity中有一个onCreate()方法,这个方法是-一个活动被创建时必定要执行的方法, 其中只有两行代码，并且没有Hello World!的字样。</p>
-<p>其实Android程序的设计讲究逻辑和视图分离，因此是不推荐在活动中直接编写界面的，更加通用的一-种做法是,在布局文件中编写界面,然后在活动中引人进来。可以看到,在onCreate(). 方法的第二行调用了setContentView()方法， 就是这个方法给当前的活动引入了一个 hello_ world_ layout 布局,那Hello World!一定就是在这里定义的了!我们打开这个文件看一看。 布局文件都是定义在res/layout 目录下的，当展开layout目录，会看到hello_ <em>world</em></p>
-<p>&lt;RelativeLayout xmlns :android=”http: //schemas . android . com/apk/ res/ android”</p>
-<p>xmlns: tools=”<a target="_blank" rel="noopener" href="http://schemas/">http://schemas</a> . android. com/ tools”</p>
-<p>android:id=”@+id/hello_ world_ layout “</p>
-<p>android:layout_ width= “match_ parent”</p>
-<p>android: layout_ height= “ match_ parent “</p>
-<p>android : paddingBottom=”@dimen/activity_ <em>vertical</em> margin”</p>
-<p>android: paddingLeft=”@dimen/activity_ <em>horizontal</em> margin”</p>
-<p>android : paddingRight=”@dimen/ activity_ horizontal_ margin”</p>
-<p>android : paddingTop=”@dimen/activity_ vertical_ margin”</p>
-<p>tools: context=” com. example . helloworld . Hel loWorldActivity”&gt;</p>
-<p>&lt;TextView</p>
-<p>and roid: layout_ Width=”wrap_ content “</p>
-<p>android: layout_ height=”wrap_ content ‘</p>
-<p>android:text=”Hello World!” /&gt;</p>
-</RelativeLayout>
-
-<p>现在只需要看到上面代码中有一个TextView,这是Android 系统提供的一个控件，用于在布局中显示文字的。终于在 TextView中看到了Hello World!的字样!哈哈!终于找到了，原来就是通过android:text= “Hello World!”这句代码定义的。<br>这样我就将HelloWorld项目的目录结构以及基本的执行过程都分析完了，下一小节就来学习一下项目中所包含的资源。</p>
-
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/19/%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%89%E5%8D%93%E9%A1%B9%E7%9B%AE/" data-id="cktr7ywn800001sw5dfcpaohw" data-title="创建第一个安卓项目" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
 </article>
 
+    
+        <article class="simple-article">
+    <div class="card">
+        <div class="card-content">
+            <div class="article-title">
+                
+    
+        <h1 class="indigo-link-context"><a href="/2021/09/11/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">Java数据类型</a></h1>
+    
 
 
-  
-    <article id="post-Java数据类型" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/11/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="article-date">
-  <time class="dt-published" datetime="2021-09-11T08:47:45.000Z" itemprop="datePublished">2021-09-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+            </div>
+
+            <time class="pink-link-context" datetime="2021-09-11T08:47:45.000Z"><a href="/2021/09/11/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">2021-09-11</a></time>
+
+            
+
+
+            
+        </div>
+
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/11/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">Java数据类型</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>在Java中，数据类型分为基本数据类型和引用数据类型两大类。<br>基本数据类型有八种，分别是：<br>1.整型：byte、short、int、long<br>2.浮点型：float、double<br>3.字符型：char<br>4.布尔型：boolean</p>
-<p>整型：<br>数据类型         所占比特位数               取值范围<br>byte               8(1个字节)                 -128<del>127<br>short             16(2……)                    -32768</del>32767<br>int                 32(4……)                     -2的31次方<del>2的31次方-1<br>long              64(8……)                   -2的63次方</del>2的63次方-1</p>
-<p>浮点型：<br>数据类型       所占比特位数<br>float              32(4个字节）<br>double          64(8个字节）</p>
-<p>注：浮点数默认为double型，float型的数值有一个后缀“f“。</p>
-<p>例如<br>float a=123.45f;<br>double b=123.45;</p>
-<p>布尔类型：<br>boolean类型只有两个值：true和false，用于判定逻辑条件</p>
-<p>例如：<br>Boolean a=false；<br>Boolean b=true；</p>
-<p>代码：<br>public class Demo1 {<br>   public static void main(String[] args) {<br>          bооlеаn flаg1 = truе;<br>          boolean flag2 = false;<br>if(flag1) {<br>System. out. println(“a! “);<br>               }<br>if(! flag2) {<br>System. out. println(“b! “);<br>                 }<br>          }<br>}</p>
-<p>字符型：<br>char：存放由单括号括起的单个字符，占两个字节，取值范围：[0,65535]</p>
-<p>例如：char c=’中’;<br>           char a=20013;</p>
-<p>数据类型转换：<br>1.自动类型转换：把一个表示数据范围小的数值或者变量赋给另一个表示数据范围大的变量。这种转换方式是自动的，直接书写即可。<br>例如：double num=10;</p>
-<p>2.强制类型转换：把一个表示数据范围大的数值或者变量赋值给数据范围小的变量。</p>
-<p>3.强制类型转换格式：目标数据类型 变量名=(目标数据类型）值或者变量。</p>
-<p>byte–&gt;short<br>                       –&gt;int–&gt;long–&gt;float–&gt;double<br>              char</p>
-<p>例如：<br>public class Demo1 {<br>         public static void main(String[] args) (<br>         char c = ‘中’;//占两个字节<br>         short s ;//占两个字节，去掉符号位，只有16位表示数值<br>         s = (short) c;//大范围强制转换小范围<br>int i = c;//自动转换<br>System.out.println(c+”在编码表中的序号是：”+i);<br>char a =20013;<br>System.out .println( ‘200013对应的char字符为：”+a);<br>}<br>}</p>
-
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/11/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" data-id="cktfl3zct0000wcw5apmme4o8" data-title="Java数据类型" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
 </article>
 
+    
+        <article class="simple-article">
+    <div class="card">
+        <div class="card-content">
+            <div class="article-title">
+                
+    
+        <h1 class="indigo-link-context"><a href="/2021/09/08/Java%E5%8F%98%E9%87%8F/">Java变量</a></h1>
+    
 
 
-  
-    <article id="post-Java变量" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/08/Java%E5%8F%98%E9%87%8F/" class="article-date">
-  <time class="dt-published" datetime="2021-09-08T08:15:59.000Z" itemprop="datePublished">2021-09-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+            </div>
+
+            <time class="pink-link-context" datetime="2021-09-08T08:15:59.000Z"><a href="/2021/09/08/Java%E5%8F%98%E9%87%8F/">2021-09-08</a></time>
+
+            
+
+
+            
+        </div>
+
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/08/Java%E5%8F%98%E9%87%8F/">Java变量</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>变量概念：<br>1.变量是程序中储存数据的基本单元，在该存储空间中，存储的数值可以改变。<br>2.通过变量名可以简单快速地找到它存储的数据。</p>
-<p>变量使用步骤：<br>1.声明变量，即根据数据类型在内存申请空间。<br>                 数据类型    变量名—&gt;int age；</p>
-<p>2.赋值，即将数据存储值对应的内存空间。<br>                 变量名=数据—&gt;age=20；</p>
-<p>注：第一步和第二步可以合并。<br>       数据类型  变量名=数值—&gt;int age=20;</p>
-<p>3.使用变量，即取出数据使用。</p>
-<p>Java中有3种类型的变量：<br>1.全局变量：类的属性，也叫成员变量或实例变量。<br>2.局部变量：某个或代码中临时定义的变量。<br>3.静态变量：被static修饰的变量，整个类的成员共享。</p>
-<p>变量的作用域：<br>   不同类型变量的作用域和生命周期不同</p>
-<p>public class Cycle{<br>                       int var1=1;<br>                       static int var2=2;<br>                       public int add() {<br>                                              int var3=var1+var2;<br>                                              for(int i=0;i&lt;5;i++){<br>                                                    System.out.println(i);<br>                                               }<br>                                               return var3;<br>                        }<br>}
-       </p>
-
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/08/Java%E5%8F%98%E9%87%8F/" data-id="cktba48060000xgw54egw8i9q" data-title="Java变量" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
 </article>
 
+    
+        <article class="simple-article">
+    <div class="card">
+        <div class="card-content">
+            <div class="article-title">
+                
+    
+        <h1 class="indigo-link-context"><a href="/2021/09/06/Java%E6%A0%87%E8%AF%86%E7%AC%A6/">Java标识符</a></h1>
+    
 
 
-  
-    <article id="post-Java标识符" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/06/Java%E6%A0%87%E8%AF%86%E7%AC%A6/" class="article-date">
-  <time class="dt-published" datetime="2021-09-06T15:36:14.000Z" itemprop="datePublished">2021-09-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+            </div>
+
+            <time class="pink-link-context" datetime="2021-09-06T15:36:14.000Z"><a href="/2021/09/06/Java%E6%A0%87%E8%AF%86%E7%AC%A6/">2021-09-06</a></time>
+
+            
+
+
+            
+        </div>
+
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/06/Java%E6%A0%87%E8%AF%86%E7%AC%A6/">Java标识符</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>标识符<br>类、接口、方法、变量、方法、接口、枚举、注解起名字是使用的字符序列<br>要求：<br>1.字母、数字、下划线(_)、$组成。<br>2.不能使用数字开头。<br>3.不能使用Java的关键字。<br>4.区分大小写。</p>
-<p>类、接口命名规则：<br>单个单词：首字母大写，其余小写<br>如Hello<br>多个单词：每个单词首字母都大写<br>如HelloWorld</p>
-<p>变量、方法命名规则：<br>单个单词：字母全部小写<br>如check()<br>多个单词：首字母小写，后面每个单词首字母大写<br>如checkUserName()</p>
-<p>常量命名规则：<br>单个单词：字母全部大写<br>如NUMBER<br>多个单词：字母全部大写，中间使用下划线隔开<br>如MAX_VALUE</p>
-
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/06/Java%E6%A0%87%E8%AF%86%E7%AC%A6/" data-id="ckt8uctne0000ogw5auya86j3" data-title="Java标识符" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
 </article>
 
+    
+        <article class="simple-article">
+    <div class="card">
+        <div class="card-content">
+            <div class="article-title">
+                
+    
+        <h1 class="indigo-link-context"><a href="/2021/09/05/%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/">编写第一个Java程序</a></h1>
+    
 
 
-  
-    <article id="post-编写第一个Java程序" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/05/%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/" class="article-date">
-  <time class="dt-published" datetime="2021-09-05T12:33:39.000Z" itemprop="datePublished">2021-09-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+            </div>
+
+            <time class="pink-link-context" datetime="2021-09-05T12:33:39.000Z"><a href="/2021/09/05/%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/">2021-09-05</a></time>
+
+            
+
+
+            
+        </div>
+
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/05/%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/">编写第一个Java程序</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>一.定义类<br>在Java程序开发之中最基础的单元是类，所有的程序必须在类中执行，类的基本语法如下<br>：<br>[pubic]  class  类名称<br>{<br> }</p>
-<p>实例：<br>public class HelloWorld{<br>  public static void main(String[] args){<br>    System.out.println(“Hello，World!”);<br>  }<br>}</p>
-<p>注：“public class类名称{}”：类名称必须与文件名保持一致，一个Java*.java文件中只允许有一个public class定义；<br>          Java语言有着明确的命名要求，以后定义类名称的时候要求每一个单词首字母大写，例如：HelloWorld</p>
-<p>二.主方法<br>主方法是所有程序执行的起点，并且一定要定义在类中，Java的主方法定义<br>public class 类名称{<br>  public static void main(String[] args){<br>           程序代码由此执行;<br>  }<br>}<br>屏幕打印（系统输出）<br>有两类语法形式<br>1.输出后追加换行：System.out.println();<br>2.输出后不追加换行：System.out.print();</p>
-<p>源码分析：<br>public 表示公开<br>class 表示类<br>static 表示静态<br>void 表示方法返回值类型<br>main 表示方法名，严格定义<br>String 表示字符串<br>[] 表示数组<br>args 表示参数名</p>
-
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/05/%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/" data-id="ckt7bu8e9000094w57f850vfe" data-title="编写第一个Java程序" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
 </article>
 
+    
+        <article class="simple-article">
+    <div class="card">
+        <div class="card-content">
+            <div class="article-title">
+                
+    
+        <h1 class="indigo-link-context"><a href="/2021/08/31/%E6%90%AD%E8%BD%BD%E5%AE%89%E5%8D%93%E7%A8%8B%E5%BA%8F%E5%88%86%E6%9E%90%E7%8E%AF%E5%A2%83/">搭载安卓程序分析环境</a></h1>
+    
 
 
-  
-    <article id="post-搭载安卓程序分析环境" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/08/31/%E6%90%AD%E8%BD%BD%E5%AE%89%E5%8D%93%E7%A8%8B%E5%BA%8F%E5%88%86%E6%9E%90%E7%8E%AF%E5%A2%83/" class="article-date">
-  <time class="dt-published" datetime="2021-08-31T03:29:56.000Z" itemprop="datePublished">2021-08-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+            </div>
+
+            <time class="pink-link-context" datetime="2021-08-31T03:29:56.000Z"><a href="/2021/08/31/%E6%90%AD%E8%BD%BD%E5%AE%89%E5%8D%93%E7%A8%8B%E5%BA%8F%E5%88%86%E6%9E%90%E7%8E%AF%E5%A2%83/">2021-08-31</a></time>
+
+            
+
+
+            
+        </div>
+
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/08/31/%E6%90%AD%E8%BD%BD%E5%AE%89%E5%8D%93%E7%A8%8B%E5%BA%8F%E5%88%86%E6%9E%90%E7%8E%AF%E5%A2%83/">搭载安卓程序分析环境</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>JDK 的配置，初学Java 开发，那是必须会的。<br>下载，遇到的问题就是要注册oracle 的账号，还有要下载特定版本，比如jdk 1.7，jdk 1.6，很难找到在哪里。解决方案在这里：<a target="_blank" rel="noopener" href="http://jdk.java.net/java-se-ri/7">http://jdk.java.net/java-se-ri/7</a> ，直接选择对应的版本下载即可。<br>安装：不要使用exe 那种安装方式，直接使用zip 包的方式，解压到c盘，我的目录C:\Program Files\Java\jdk-16<br>配置java_home<br>配置classpath<br>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar;%JAVA_HOME%\lib\dt.jar;</p>
-<p>是否配置成功:java –version<br>                      javac -version<br>1.2 开发环境搭建<br>开发环境的搭建，最新的开发环境，现在都是切换到AS，Eclipse早就过时了。<br>AS 即Android Studio， 下载地址：<a target="_blank" rel="noopener" href="http://www.android-studio.org/">http://www.android-studio.org/</a><br>安装，开始点击下一步，一直安装即可。<br>下载安装sdk：<br>等下载完成，最基本的开发环境就配置完成。</p>
-
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/31/%E6%90%AD%E8%BD%BD%E5%AE%89%E5%8D%93%E7%A8%8B%E5%BA%8F%E5%88%86%E6%9E%90%E7%8E%AF%E5%A2%83/" data-id="ckszimole00004ow51olkbovq" data-title="搭载安卓程序分析环境" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
 </article>
 
+    
+        <article class="simple-article">
+    <div class="card">
+        <div class="card-content">
+            <div class="article-title">
+                
+    
+        <h1 class="indigo-link-context"><a href="/2021/08/04/Java%E5%AD%A6%E4%B9%A03-4%E7%AB%A0/">Java学习3-4章</a></h1>
+    
 
 
-  
-    <article id="post-Java学习3-4章" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/08/04/Java%E5%AD%A6%E4%B9%A03-4%E7%AB%A0/" class="article-date">
-  <time class="dt-published" datetime="2021-08-04T14:22:09.000Z" itemprop="datePublished">2021-08-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+            </div>
+
+            <time class="pink-link-context" datetime="2021-08-04T14:22:09.000Z"><a href="/2021/08/04/Java%E5%AD%A6%E4%B9%A03-4%E7%AB%A0/">2021-08-04</a></time>
+
+            
+
+
+            
+        </div>
+
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/08/04/Java%E5%AD%A6%E4%B9%A03-4%E7%AB%A0/">Java学习3-4章</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>三、选择结构<br>1.if选择结构<br>if基本选择结构<br>语法：if(要满足的条件){<br>如果条件为true的时候，进入大括号中<br>满足条件之后得到的结果，不满足条件不会去执行<br>}<br>如果条件为false的时候，绕过大括号执行外面的</p>
-<pre><code>      条件只能是boolean类型的数据
-</code></pre>
-<p>1<br>2.逻辑运算符：<br>&amp;&amp;(shift+7):and符号，并且的意思，同时满足连接前后条件才为true，有一个不满足为<br>false<br>||(shirt+):或者的意思，只要前后两个条件一个为true，整个表达式就为true，同时为<br>false才为false<br>!(shirt+1):非的意思，就是取反，如果表达式为true，使用非就为false</p>
-<p>3.if-else选择结构：<br>适用于基本选择条件的情况<br>语法：if(要满足的条件){<br>满足条件得到的结果<br>}else{<br>不满足条件的得到的结果<br>}</p>
-<p>4.产生一个随机数：<br>1、找到一个有随机数产生器的商店，语法：import java.util.Random;<br>2、购买一台随机数产生器并取一个名字，语法：Random ran = new Random();<br>3、使用这台随机数产生器的功能区产生随机数，语法：ran.nextInt(数字);<br>ran.nextInt(10) 表示产生一个0<del>9之间的随机数<br>ran.nextInt(10) +1表示产生一个1</del>10之间的随机数</p>
-<p>5.多重if选择结构：<br>适用于很多条件分支的情况<br>语法：if(要满足的条件1){<br>满足条件1得到的结果<br>}else if(要满足的条件2){ //默认不满足条件1<br>满足条件2得到的结果<br>}else if(要满足的条件n){ //默认不满足条件2<br>满足条件n得到的结果<br>}else{ //默认不满足条件n<br>不满足所有条件得到的结果<br>}<br>只要找到一个满足的条件，执行完之后，结束选择结构</p>
-<p>6.嵌套if选择结构<br>适用于在一个判断的基础再做一次判断的情况<br>语法：if(要满足的条件1){<br>满足条件1得到的结果<br>if(要满足的条件2){<br>满足条件2得到的结果<br>}<br>}else{<br>不满足条件1得到的结果<br>}</p>
-<p>==只能够比较数值类型，比较字符串是否相等，使用.equals(“要等于哪个字符串”);<br>比如：sex.equals(“男”)；10 == 10</p>
-<p>四、循环结构<br>1.循环结构：<br>打印50份试卷，是从第1份开始打印，打印到第50份结束，重复打印试卷的过程<br>绕操场跑10圈，从第1圈开始，到第10圈结束，重复跑步的过程<br>做100道编程题，从第1题开始，到第100道结束，重复做题的过程<br>2.循环的概念：重复完成某一件事情或者某一个操作，有一个开始位置和结束位置就叫做<br>循环<br>3.循环的特点：<br>1、循环条件：也就是满足某个条件下才做重复的操作<br>2、循环操作：也就是重复所做的事情或者操作</p>
-<p>4.while循环的语法：<br>while(循环条件){<br>满足条件的时候所做的循环操作<br>}<br>特点：先判断，再执行<br>使用while循环的步骤：<br>1、确定是否存在重复操作<br>2、分析出循环条件和循环操作分别是什么<br>3、套用while循环语法写出循环结构<br>4、检查循环是否能正确退出</p>
-<p>5.do-while循环结构的语法：<br>do{<br>循环操作<br>}while(循环条件);<br>特点：先执行循环操作，再进行循环条件判断（先执行，再判断）</p>
-<p>6.while循环和do-while循环的差别：<br>1、循环的次序不同，while循环是先判断，再执行，do-while是先执行，再判断；<br>2、while循环在初始值不满足循环条件的时候一次都不会执行，do-while循环在初始值不<br>满足循环条件的时候至少执行一次</p>
-<p>7.程序调试：<br>断点调试的步骤：（每次调试后取消掉断点）<br>1、设置断点：在左侧边栏的位置点击鼠标左键两次，可以生成一个断点<br>2、进入调试模式：点击右键，选择debug as进入debug调试模式，程序会在设置断点的地<br>方停下来<br>3、单步执行，也就是一行一行的执行代码，按F6单步跳过执行代码<br>4、观察变量值的变化<br>5、找出错误的位置<br>6、改正错误<br>7、运行看结果是否正确**</p>
-<p>8.for循环结构<br>语法：for(表达式1;表达式2;表达式3){<br>循环操作<br>}<br>表达式1：循环从哪里开始，也就是循环的初始值，比如：int num = 1<br>表达式2：循环的条件，也就是循环到哪里结束，比如：num &lt;100<br>表达式3：计数器，也就是每循环一次，初始值产生怎样的变化，比如：num++<br>每个表达式之间用分号隔开，每个表达式都可以不写，但是分号不能省略</p>
-<p>for循环的执行顺序：<br>      ①先去执行表达式1，也就是先去找初始值<br>      ②第二步去执行表达式2，也就是去找循环条件<br>      ③第三步去执行循环操作<br>      ④最后才去执行表达式3，也就是最后才实现初始值变化的过程</p>
-<p>表达式1和表达3中可以写多个，表达式2,条件只能有一个<br>9.跳转语句的使用：<br>break关键字：（通常和if选择结构一起使用）<br>在switch使用break表示结束switch选择结构去执行选择结构外的代码<br>在循环中使用break表示结束循环结构去执行循环结构外的代码</p>
-<p>continue关键字：（通常和if选择结构一起使用）<br>continue只能够在循环结构中使用<br>在循环中使用continue表示结束当前这一次循环，然后开始下一次循环</p>
-<p>使用场合：</p>
-<p>break常用于switch结构和循环结构中</p>
-<p>continue一般用于循环结构中</p>
-<p>作用（循环结构中）<br>1<br>break语句终止某个循环，程序跳转到循环块外的下一条语句</p>
-<pre><code>continue跳出本次循环，进入下一次循环 
-</code></pre>
-<p>1<br>10.循环结构四要素：<br>1、初始值，也就是循环要从哪里开始<br>2、循环条件，循环要到哪里结束<br>3、循环操作（循环体），就是需要重复做的某些操作<br>4、计数器（迭代部分），就是每次重复之后，初始值要产生的变化</p>
-<p>11.while、do-while和for循环的区别：<br>1、执行顺序不同<br>while和for循环：先判断，再执行<br>do-while循环：先执行，再判断</p>
-<p>2、适用场景（循环次数固定推荐使用for循环）<br>   for循环只适用于循环次数固定的情况<br>   while和do-while循环无论循环次数是否固定都可以使用</p>
-
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/04/Java%E5%AD%A6%E4%B9%A03-4%E7%AB%A0/" data-id="ckrxq4har0000s4w56o2x9ptw" data-title="Java学习3-4章" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
 </article>
 
+    
+        <article class="simple-article">
+    <div class="card">
+        <div class="card-content">
+            <div class="article-title">
+                
+    
+        <h1 class="indigo-link-context"><a href="/2021/08/01/Java%E5%AD%A6%E4%B9%A0/">Java学习1-2章</a></h1>
+    
 
 
-  
-    <article id="post-Java学习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/08/01/Java%E5%AD%A6%E4%B9%A0/" class="article-date">
-  <time class="dt-published" datetime="2021-08-01T15:52:24.000Z" itemprop="datePublished">2021-08-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+            </div>
+
+            <time class="pink-link-context" datetime="2021-08-01T15:52:24.000Z"><a href="/2021/08/01/Java%E5%AD%A6%E4%B9%A0/">2021-08-01</a></time>
+
+            
+
+
+            
+        </div>
+
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/08/01/Java%E5%AD%A6%E4%B9%A0/">Java学习1-2章</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>一、初始java<br>1.生活中的程序：<br>从起床到教室上课的过程<br>穿衣打扮》起床》洗漱》出宿舍》》吃早餐》到教室<br>按照特定的顺序去完成某一件事的过程我们叫做生活中的程序<br>2.计算机中的程序:<br>一组有序指令的集合,需要和计算机交流就要使用计算机语言，java就是计算机语言的一种<br>3.java能做什么：<br>1、开发桌面应用程序，比如：QQ、酷狗<br>2、开发internet应用程序，比如：淘宝、天猫<br>4.java技术平台：<br>1、Java SE：标准版，java的技术与核心，开发桌面应用程序<br>2、Java EE：提供企业级项目的解决方案，开发网页应用<br>5.安装jdk：<br>jdk：java的一个核心工具包<br>jre：java的一个运行环境（表示java除了可以在windows系统运行，还可以在苹果系统运行）<br>环境变量：告诉计算机可以执行.java的运行程序在哪里<br>6.开发java程序的步骤：<br>1、编写一个java源程序<br>新建记事本，将后缀名改为.java<br>2、编译java源程序，语法：javac 源文件名.java<br>编译后会生成一个.class的字节码文件<br>3、运行java程序，运行的是.class的文件，语法：java 源文件名<br>注意：java严格区分大小写<br>System.out.println () 打印之后换一行，先打印再换行<br>System.out.print () 打印之后不换行<br>7.转义字符：<br>使用”\n”进行换行<br>使用”\t”空格一个制表符的位置，也就是一个tab的位置，8个英文字母的长度<br>8.java中的注释：<br>//注释内容 单 行注释:表示对下一条语句进行一个解释<br>/* 注释内容 */ 多行注释：表示对下面一段语句进行一个解释<br>/**注释内容 */ 文档注释：表示对一段文本注释<br>注释的语句是不会进行编译的<br>9.java的编码规范：<br>1、遇到大括号 { 就进行一次缩进，缩进距离一个tab键的长度<br>2、每一个大括号 } 单独占一行，表示一段语句的结束<br>3、 ; 表示每行语句的结束，每一行只写一句代码<br>10.使用开发工具开发java程序的步骤：<br>1、新建一个java工程<br>2、选中新建的工程，选中src文件夹，点击右键new，新建一个class，新建时选中<br>public static void main这一项，会自动生成java源程序的框架<br>3、去编写java源程序<br>4、编译java源程序，开发工具会自动编译<br>5、运行java程序</p>
-<p>二、变量、数据类型和运算符<br>1.每个程序都只有一个入口，也就是只有一个main方法，只有一个程序可以打开QQ，其他的地方都打<br>开不了</p>
-<p>2.程序没有运行是存储磁盘上，运行在内存中</p>
-<p>3.酒店中入住：<br>1、开房间（根据不同人数开不同类型的房间）<br>2、入住</p>
-<p>4.变量的概念：内存根据数据不同类型开辟的这个空间叫做变量</p>
-<p>酒店 相当于 内存<br>房间 相当于 变量<br>入住的人 相当于 数据（变量值）<br>房间类型 相当于 数据类型（数字还是文字）<br>房间号 相当于 变量名</p>
-<p>5.变量名：用于快速找到内存中变量空间位置取得名字<br>6.数据类型：<br>数值型：<br>1、整型（int）：用于存储整数，整数的类型123,999,666<br>byte字节型，short短整型，long长整型<br>long》int》short》byte<br>2、非整型：用于存储小数，小数的类型1234.5,3.14<br>双精度浮点型（double）：小数的长度比较长<br>单精度浮点型（float）：小数的长度短一些<br>非数值型：<br>1、字符型（char）：用于存储单个字符，都需要使用英文状态的单引号括起来<br>比如：‘男’、‘女’、‘开’、‘关’<br>2、字符串型（String）：用于存储一串字符，存储0~n个字符，都需要用英文状<br>态下的双引号括起来<br>比如：“我的名字是张三”，“我的爱好是打游戏”</p>
-<p>7.变量名的命名规则：<br>1、只能够使用_和$这两个符号;<br>2、只能使用英文字母、_ 、$三个开头，后面的可以使用数字、字母和_ 、美元符号 ;<br>3、使用java语言中的关键字<br>4、采用见文识意的方式命名，采用驼峰命名法ageOfStudent,多个字母命名时，<br>第一个字母的首字母小写，后面字母首字母大写</p>
-<p>8.变量的使用：<br>1、声明变量，就是在内存开一个空间<br>语法：数据类型 变量名;（空格和分号不能少），比如：int qian;<br>2、变量赋值，就是将数据放到开辟的这个空间<br>语法：变量名 = 变量值;比如：qian = 1000;<br>3、使用变量<br>比如：System.out.println(qian);</p>
-<p>9.运算符的使用：<br>1、赋值运算符（=），将等号右边的值赋给左边<br>2、拼接运算符（+），将+左右两边的连起来</p>
-<p>表达式：就是符号（如加号、减号）与操作数（如b，3等）的组合，比如：b-1</p>
-<p>算术运算符：<br>四则运算：+、-、*、/<br>%（取模运算）：除以一个数得到余数，就是求余数的运算的运算</p>
-<p>10.从键盘扫描输入的值：<br>1、找到有扫描仪的商店，语法：import java.util.Scanner;写在public class的前面<br>2、购买一台新的扫描仪，给它取一个名字<br>语法：Scanner input = new Scanner(System.in);<br>3、使用扫描仪的扫描功能<br>如果扫描整数：使用input.nextInt();<br>如果扫描小数：使用input.nextDouble();<br>如果扫描字符串：使用input.next();</p>
-<p>11.类型转换：<br>自动类型转换：<br>1、必须两种类型互相兼容，比如：都是数值类型int和double，double和float<br>2、转换成的类型一定要比被转换的类型要大，比如：int转换成double<br>float转换成double<br>12.强制类型转换：<br>语法：数据类型 变量名 = (数据类型)变量名;<br>比如：double b = 3.14<br>int a = (int)b;<br>1、同类型的强制类型转换，比如：int a = (int)10.9;<br>2、不同类型的强制类型转换，只有char和int可以，通过ASCII码表去转换<br>比如：int b = (int)‘a’;</p>
-<p>13.运算符：<br>1、赋值运算符 =，将右边的值赋给左边<br>2、算术运算符+、-、、/、%，数学运算一样，先、/、%，后+、-<br>3、关系运算符（比较运算符）：&gt;、&lt;、&gt;=、&lt;=、==、!=<br>4、逻辑运算符</p>
-<p>boolean类型（布尔类型）：用于比较运算，只有两个值（true和false）默认false</p>
-<p>14.运算符的优先级：<br>1、最高优先级，英文状态下的小括号()<br>2、最低优先级，赋值运算符=<br>3、算术运算符&gt;关系运算符&gt;逻辑运算符&gt;赋值运算符<br>————————————————<br>版权声明：本文为CSDN博主「丿林」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44490662/article/details/103005559">https://blog.csdn.net/weixin_44490662/article/details/103005559</a></p>
-
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/01/Java%E5%AD%A6%E4%B9%A0/" data-id="ckrtduj7p0000x4w58v52dztg" data-title="Java学习1-2章" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
 </article>
 
+    
+        <article class="simple-article">
+    <div class="card">
+        <div class="card-content">
+            <div class="article-title">
+                
+    
+        <h1 class="indigo-link-context"><a href="/2021/08/01/Java%E5%AD%A6%E4%B9%A01-2%E7%AB%A0/">Java学习</a></h1>
+    
 
 
-  
-    <article id="post-Java学习1-2章" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/08/01/Java%E5%AD%A6%E4%B9%A01-2%E7%AB%A0/" class="article-date">
-  <time class="dt-published" datetime="2021-08-01T15:52:24.000Z" itemprop="datePublished">2021-08-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+            </div>
+
+            <time class="pink-link-context" datetime="2021-08-01T15:52:24.000Z"><a href="/2021/08/01/Java%E5%AD%A6%E4%B9%A01-2%E7%AB%A0/">2021-08-01</a></time>
+
+            
+
+
+            
+        </div>
+
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/08/01/Java%E5%AD%A6%E4%B9%A01-2%E7%AB%A0/">Java学习</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>一、初始java<br>1.生活中的程序：<br>从起床到教室上课的过程<br>穿衣打扮》起床》洗漱》出宿舍》》吃早餐》到教室<br>按照特定的顺序去完成某一件事的过程我们叫做生活中的程序<br>2.计算机中的程序:<br>一组有序指令的集合,需要和计算机交流就要使用计算机语言，java就是计算机语言的一种<br>3.java能做什么：<br>1、开发桌面应用程序，比如：QQ、酷狗<br>2、开发internet应用程序，比如：淘宝、天猫<br>4.java技术平台：<br>1、Java SE：标准版，java的技术与核心，开发桌面应用程序<br>2、Java EE：提供企业级项目的解决方案，开发网页应用<br>5.安装jdk：<br>jdk：java的一个核心工具包<br>jre：java的一个运行环境（表示java除了可以在windows系统运行，还可以在苹果系统运行）<br>环境变量：告诉计算机可以执行.java的运行程序在哪里<br>6.开发java程序的步骤：<br>1、编写一个java源程序<br>新建记事本，将后缀名改为.java<br>2、编译java源程序，语法：javac 源文件名.java<br>编译后会生成一个.class的字节码文件<br>3、运行java程序，运行的是.class的文件，语法：java 源文件名<br>注意：java严格区分大小写<br>System.out.println () 打印之后换一行，先打印再换行<br>System.out.print () 打印之后不换行<br>7.转义字符：<br>使用”\n”进行换行<br>使用”\t”空格一个制表符的位置，也就是一个tab的位置，8个英文字母的长度<br>8.java中的注释：<br>//注释内容 单 行注释:表示对下一条语句进行一个解释<br>/* 注释内容 */ 多行注释：表示对下面一段语句进行一个解释<br>/**注释内容 */ 文档注释：表示对一段文本注释<br>注释的语句是不会进行编译的<br>9.java的编码规范：<br>1、遇到大括号 { 就进行一次缩进，缩进距离一个tab键的长度<br>2、每一个大括号 } 单独占一行，表示一段语句的结束<br>3、 ; 表示每行语句的结束，每一行只写一句代码<br>10.使用开发工具开发java程序的步骤：<br>1、新建一个java工程<br>2、选中新建的工程，选中src文件夹，点击右键new，新建一个class，新建时选中<br>public static void main这一项，会自动生成java源程序的框架<br>3、去编写java源程序<br>4、编译java源程序，开发工具会自动编译<br>5、运行java程序</p>
-<p>二、变量、数据类型和运算符<br>1.每个程序都只有一个入口，也就是只有一个main方法，只有一个程序可以打开QQ，其他的地方都打<br>开不了</p>
-<p>2.程序没有运行是存储磁盘上，运行在内存中</p>
-<p>3.酒店中入住：<br>1、开房间（根据不同人数开不同类型的房间）<br>2、入住</p>
-<p>4.变量的概念：内存根据数据不同类型开辟的这个空间叫做变量</p>
-<p>酒店 相当于 内存<br>房间 相当于 变量<br>入住的人 相当于 数据（变量值）<br>房间类型 相当于 数据类型（数字还是文字）<br>房间号 相当于 变量名</p>
-<p>5.变量名：用于快速找到内存中变量空间位置取得名字<br>6.数据类型：<br>数值型：<br>1、整型（int）：用于存储整数，整数的类型123,999,666<br>byte字节型，short短整型，long长整型<br>long》int》short》byte<br>2、非整型：用于存储小数，小数的类型1234.5,3.14<br>双精度浮点型（double）：小数的长度比较长<br>单精度浮点型（float）：小数的长度短一些<br>非数值型：<br>1、字符型（char）：用于存储单个字符，都需要使用英文状态的单引号括起来<br>比如：‘男’、‘女’、‘开’、‘关’<br>2、字符串型（String）：用于存储一串字符，存储0~n个字符，都需要用英文状<br>态下的双引号括起来<br>比如：“我的名字是张三”，“我的爱好是打游戏”</p>
-<p>7.变量名的命名规则：<br>1、只能够使用_和$这两个符号;<br>2、只能使用英文字母、_ 、$三个开头，后面的可以使用数字、字母和_ 、美元符号 ;<br>3、使用java语言中的关键字<br>4、采用见文识意的方式命名，采用驼峰命名法ageOfStudent,多个字母命名时，<br>第一个字母的首字母小写，后面字母首字母大写</p>
-<p>8.变量的使用：<br>1、声明变量，就是在内存开一个空间<br>语法：数据类型 变量名;（空格和分号不能少），比如：int qian;<br>2、变量赋值，就是将数据放到开辟的这个空间<br>语法：变量名 = 变量值;比如：qian = 1000;<br>3、使用变量<br>比如：System.out.println(qian);</p>
-<p>9.运算符的使用：<br>1、赋值运算符（=），将等号右边的值赋给左边<br>2、拼接运算符（+），将+左右两边的连起来</p>
-<p>表达式：就是符号（如加号、减号）与操作数（如b，3等）的组合，比如：b-1</p>
-<p>算术运算符：<br>四则运算：+、-、*、/<br>%（取模运算）：除以一个数得到余数，就是求余数的运算的运算</p>
-<p>10.从键盘扫描输入的值：<br>1、找到有扫描仪的商店，语法：import java.util.Scanner;写在public class的前面<br>2、购买一台新的扫描仪，给它取一个名字<br>语法：Scanner input = new Scanner(System.in);<br>3、使用扫描仪的扫描功能<br>如果扫描整数：使用input.nextInt();<br>如果扫描小数：使用input.nextDouble();<br>如果扫描字符串：使用input.next();</p>
-<p>11.类型转换：<br>自动类型转换：<br>1、必须两种类型互相兼容，比如：都是数值类型int和double，double和float<br>2、转换成的类型一定要比被转换的类型要大，比如：int转换成double<br>float转换成double<br>12.强制类型转换：<br>语法：数据类型 变量名 = (数据类型)变量名;<br>比如：double b = 3.14<br>int a = (int)b;<br>1、同类型的强制类型转换，比如：int a = (int)10.9;<br>2、不同类型的强制类型转换，只有char和int可以，通过ASCII码表去转换<br>比如：int b = (int)‘a’;</p>
-<p>13.运算符：<br>1、赋值运算符 =，将右边的值赋给左边<br>2、算术运算符+、-、、/、%，数学运算一样，先、/、%，后+、-<br>3、关系运算符（比较运算符）：&gt;、&lt;、&gt;=、&lt;=、==、!=<br>4、逻辑运算符</p>
-<p>boolean类型（布尔类型）：用于比较运算，只有两个值（true和false）默认false</p>
-<p>14.运算符的优先级：<br>1、最高优先级，英文状态下的小括号()<br>2、最低优先级，赋值运算符=<br>3、算术运算符&gt;关系运算符&gt;逻辑运算符&gt;赋值运算符</p>
-
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/01/Java%E5%AD%A6%E4%B9%A01-2%E7%AB%A0/" data-id="ckrxq4hay0001s4w5crq9fejr" data-title="Java学习" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
 </article>
 
-
-
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-  </nav>
-
-</section>
-        
-          <aside id="sidebar">
-  
     
 
-  
+    <ul class="pagination center-align">
+    <li class="disabled">
+        <a href="/"><i class="fa fa-angle-left"></i></a>
+    </li>
     
+    
+        <li class="active pink"><a href="/">1</a></li>
+    
+        <li class="waves-effect"><a href="/page/2">2</a></li>
+    
+    
+    <li class="">
+        <a href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    </li>
+ </ul>
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
-    </div>
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="菜单"><i class="fa fa-navicon"></i></a></li>
+    </ul>
   </div>
 
-
-  
+    </main>
+    <footer class="page-footer indigo darken-1">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/09/22/%E8%B5%84%E6%BA%90%E8%AF%A6%E8%A7%A31/">资源详解1</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/19/%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%89%E5%8D%93%E9%A1%B9%E7%9B%AE/">创建第一个安卓项目</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/11/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">Java数据类型</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/08/Java%E5%8F%98%E9%87%8F/">Java变量</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/06/Java%E6%A0%87%E8%AF%86%E7%AC%A6/">Java标识符</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2016 example.com, All rights reserved.
+            <p class="right" style="margin-top: 0;">本博客由 <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a target="_blank" rel="noopener" href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
     </div>
-  </div>
 </footer>
 
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
 
 
-<script src="/js/jquery-3.4.1.min.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
 
 
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
 
 
 
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
-<script src="/js/script.js"></script>
 
 
-
-
-
-  </div>
 </body>
 </html>
